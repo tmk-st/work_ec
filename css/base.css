@@ -7,6 +7,7 @@ html {
 body {
     font-family: 'Alegreya Sans SC', sans-serif;
     margin: 0;
+    color: #515254;
 }
 h2 {
     text-align: center;
@@ -14,6 +15,9 @@ h2 {
 }
 .content {
     margin: 100px auto;
+}
+p {
+    margin: 0;
 }
 
 /* トップ */
@@ -74,11 +78,7 @@ h2 {
     transition: all 0.1s ease;
 }  
 .slide_caption {
-    color: #515254;
     position: absolute;
-}
-.slide_caption p {
-    margin: 0;
 }
 .cap1 {
     top: 20%;
@@ -125,14 +125,12 @@ h2 {
     font-size: 40px;
 }
 .slide_3_button {
-    color: white;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    background: #515254;
+    background: white;
     width: 30%;
     text-align: center;
-    border-radius: 30px;
     margin: 10px -8px;
     font-weight: bold;
 }
@@ -183,7 +181,6 @@ h2 {
 .item p {
     padding-top: 0;
     padding-left: 30px;
-    margin: 0;
     font-size: 1.5rem;
 }
 .item span {
@@ -218,20 +215,21 @@ h2 {
     justify-content: center;
     padding: 0;
 }
-.category {
-    position: relative;
-}
 .top_category img {
     width: 80%;
 }
 .top_category li {
     width: 9%;
-    text-align: center;
     list-style: none;
     cursor: pointer;
+    opacity: 0.5;
+    position: relative;
+    text-align: center;
+}
+.top_category li:hover {
+    opacity: 1;
 }
 .top_category p {
-    margin: 0;
     position: absolute;
     bottom: 0;
     left: 35%;
@@ -284,9 +282,8 @@ h2 {
     right: 20px;
 }
 .shop_now {
-    border: 2px solid #515254;
+    border: 2px solid;
     font-size: 20px;
-    color: #515254;
     padding: 5px 20px;
     margin: 20px;
     cursor: pointer;
@@ -295,68 +292,71 @@ h2 {
     color: #CCCCCC;
     border: 2px solid white;
     background-color: white;
-    transition: all .3s ease;
+    transition: all .1s ease;
 }
 
 /* ディスカウント商品 */
 .discount {
     background-color: #F2F2F2;
     height: 280px;
-    margin: 0 200px;
-    padding: 20px;
-    font-size: 40px;
-    text-align: right;
+    margin: 0 100px;
+    text-align: center;
     position: relative;
 }
-.discount p {
-    margin-right: 5%;
-}
-.discount_images {
-    display: flex;
+.plant_img {
     position: absolute;
+    width: 25%;
     bottom: 0;
-    left: 5%;
-    width: 80%;
+    left: 0;
 }
-.discount_images img {
+.chair_img {
     position: absolute;
-}
-.lamp_img {
     width: 15%;
-    bottom: 20px;
-}
-.couch_img {
-    width: 60%;
     bottom: 0;
-    margin-left: 7%;
+    right: 5%;
 }
-.circle {
-    width: 150px;
-    line-height: 150px;
-    background-color: #FFD768;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
+.discount_detail {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
 }
+.discount_line_1 {
+    font-size: 20px;
+}
+.discount_line_1 span {
+    color: red;
+}
+.discount_line_2 {
+    font-size: 30px;
+}
+.countdown {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.time {
+    padding: 2rem 3rem;
+}  
+#day, #hour, #min, #sec {
+    font-size: 4rem;
+}
 .discount_button {
+    position: absolute;
     cursor: pointer;
-    border: 2px solid #FFD768;
+    border: 2px solid;
     font-size: 20px;
     width: 10%;
-    position: absolute;
-    right: 8%;
-    text-align: center;
-    padding: 8px;
-    font-weight: bold;
+    padding: 5px;
+    margin: 0 auto;
+    bottom: 10%;
+    left: 50%;
 }
 .discount_button:hover {
-    transition: all .3s ease;
+    transition: all .1s ease;
     background: #FFD768;
     color: white;
+    border: 2px solid #FFD768;
 }
 
 /* サービス一覧 */
@@ -364,29 +364,25 @@ h2 {
     width: 100vw;
     font-size: 25px;
 }
-.boxes {
+.service_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.tag {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+.service_detail {
+    border: 2px solid #C0C0C0;
+    padding: 20px;
+    text-align: center;
     margin: 20px;
+}
+.service_detail img {
     width: 25%;
-    display: flex;
-    cursor: pointer;
+    opacity: 0.7;
+    padding-bottom: 10px;
 }
-.tag:hover {
-    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.2);
-}
-.box {
-    margin: auto;
-    height: 70px;
-}
-.boxes img {
-    height: 70px;
-    background-color: #FFD768;
-    justify-content: left;
+.service_line {
+    font-size: 15px;
+    color: #C0C0C0;
 }
 
 /* インテリアコーディネート */
