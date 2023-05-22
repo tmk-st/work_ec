@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    position: relative;
+    margin: 0;
+}
+nav {
+    color: white;
+    background: #515254;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 20px;
+    margin: 40px 0;
+}
+li {
+    margin: 0 20px;
+    text-align: right;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+li:hover {
+    color: #FFD768;
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 480px) {
+    .nav_item {
+        margin: 5px 10px 0 0;
+        font-size: 5px;
+    }
+}
