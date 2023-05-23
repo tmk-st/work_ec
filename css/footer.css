@@ -28,6 +28,11 @@ li {
 li:hover {
     color: #FFD768;
     border-bottom: 1px solid;
+    padding-bottom: 1px;
+}
+.li::before {
+    position: absolute;
+    top: -1px;
 }
 
 @media screen and (max-width: 480px) {

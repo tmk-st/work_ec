@@ -1,5 +1,5 @@
 // トップ　スライダー
-const sliders = document.querySelectorAll(".top");
+const sliders = document.querySelectorAll(".top_container");
 
 sliders.forEach((slider, cont_slider) => {
   let slideIndex = 1;
@@ -13,7 +13,7 @@ sliders.forEach((slider, cont_slider) => {
   next.innerHTML = "&#10095;";
   slider.append(next);
 
-  let dots = document.createElement("div");
+  let dots = document.createElement("div"); // ページ位置ドット
   dots.classList.add("dots");
   slider.append(dots);
 
@@ -28,7 +28,9 @@ sliders.forEach((slider, cont_slider) => {
       });
     });
 
-    let numberText = document.createElement("div");
+    let numberText = document.createElement("div"); // ページカウント
+    numberText.classList.add("numbertext");
+    numberText.innerText = cont_slide + 1 + "/" + slides.length;
     slide.insertAdjacentElement("afterbegin", numberText);
   });
 
@@ -60,7 +62,7 @@ function countdown() {
 
   // ミリ秒から単位を修正
   const calcDay = Math.floor(diff / 1000 / 60 / 60 / 24);
-  const calcHour = Math.floor((diff / 1000 / 60 / 60) % 60) - 48;
+  const calcHour = Math.floor(diff / 1000 / 60 / 60) -48;
   const calcMin = Math.floor(diff / 1000 / 60) % 60;
   const calcSec = Math.floor(diff / 1000) % 60;
 

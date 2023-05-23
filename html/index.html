@@ -12,36 +12,48 @@
     <body>
         <iframe src="header.html" frameborder="0" style="position:absolute;width:100%"></iframe>
 
-        <!-- トップ -->
-        <div class="top">
+        <!-- トップ画面 -->
+        <div class="top_logo">H</div>
+        <div class="top_container">
             <div class="slide">
-                <div class="slide_img"><img src="../img/top_2.jpg"></div>
+                <div class="slide_img"><img src="../img/top.jpg"></div>
                 <div class="slide_caption cap1">
                     <p class="title">Homie</p>
-                    <p class="sub_title">modern furniture,<br>interior design. since 2023.</p>     
+                    <p class="heading">modern furniture,<br>interior design. since 2023.</p>     
                 </div>
             </div>
             <div class="slide">
                 <div class="slide_img"><img src="../img/newarrival.jpg"></div>
                 <div class="slide_caption cap2">
                     <p class="title">a brand</p>
-                    <p class="sub_title">new arrivals</p>
-                    <div class="slide_2_button">shop now</div>
+                    <p class="heading">new arrivals</p>
+                    <div class="slide_btn">shop now</div>
                 </div>
             </div>
             <div class="slide">
-                <div class="slide_img"><img src="../img/kitchen.jpg"></div>
+                <div class="slide_img">
+                    <img src="../img/kitchen.jpg">
+                    <div class="overlay"></div>
+                </div>
                 <div class="slide_caption cap3">
                     <p class="title">shop and fun</p>
-                    <p class="sub_title">aaaa</p>
-                    <div class="slide_3_button">shop now</div>
+                    <p class="heading">aaaa</p>
+                    <div class="slide_btn">shop now</div>
                 </div>
             </div>
-            <div class="logo">H</div>
+            <div class="slide slide4">
+                <div class="slide_img"><img src="../img/top_room_3.jpg"></div>
+                <div class="slide_caption cap4">
+                    <p>big sale products</p>
+                    <p class="title">plants for interior</p>
+                    <p class="heading">aaaa</p>
+                    <div class="slide_btn">shop now</div>
+                </div>
+            </div>
         </div>
 
-        <!-- 人気カテゴリー -->
-        <div class="content top_category">
+        <!-- カテゴリー -->
+        <div class="wrapper category_container">
             <h2>shop by category</h2>
             <ul>
                 <li>
@@ -72,12 +84,11 @@
         </div>
 
         <!-- 人気商品 -->
-        <div class="content best_items">
+        <div class="wrapper best_items_container">
             <h2>best items</h2>
-            <div class="images">
-                <div class="item">
-                    <img src="../img/lamp.jpg" alt="商品画像1">
-                    <div class="item_tag new_item_tag">new</div>
+            <div class="best_items_img">
+                <div class="best_items_content">
+                    <img src="../img/chair_white.jpg" alt="商品画像1">
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -85,10 +96,21 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </p>
-                    <p>lamp</p>
-                    <p>¥7,990</p>
+                    <p>chair</p><p>¥6,990</p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
+                    <img src="../img/lamp.jpg" alt="商品画像1">
+                    <div class="new_item_tag">new</div>
+                    <p class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </p>
+                    <p>lamp</p><p>¥7,990</p>
+                </div>
+                <div class="best_items_content">
                     <img src="../img/book_shelf.jpg" alt="商品画像2">
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
@@ -97,24 +119,23 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </p>
-                    <p>shelf</p>
-                    <p>¥6,990</p>
+                    <p>wood shelf</p><p>¥6,990</p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
                     <img src="../img/bedside_lamp.jpg" alt="商品画像5">
-                    <div class="item_tag new_item_tag">new</div>
+                    <div class="new_item_tag">new</div>
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
-                    </p><p>side-lamp</p>
-                    <p>¥4,990</p>
+                    </p>
+                    <p>side-lamp</p><p>¥4,990</p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
                     <img src="../img/clock.jpg" alt="商品画像4">
-                    <div class="item_tag">sale</div>
+                    <div class="sale_item_tag">sale</div>
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -122,12 +143,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </p>
-                    <p>wall clock</p>
-                    <p>¥1,990<span>¥2,990</span></p>
+                    <p>wall clock</p><p class="sale_price">¥1,990<span>¥2,990</span></p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
                     <img src="../img/chair.jpg" alt="商品画像3">
-                    <div class="item_tag">sale</div>
+                    <div class="sale_item_tag">sale</div>
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -135,10 +155,9 @@
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star"></i>
                     </p>
-                    <p>wood chair</p>
-                    <p class="sale_price">¥5,990<span>¥6,990</span></p>
+                    <p>wood chair</p><p class="sale_price">¥5,990<span>¥6,990</span></p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
                     <img src="../img/art.jpg" alt="商品画像6">
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
@@ -146,56 +165,64 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
-                    </p><p>artwork</p>
-                    <p>¥2,990</p>
+                    </p><p>artwork</p><p>¥2,990</p>
                 </div>
-                <div class="item">
+                <div class="best_items_content">
+                    <img src="../img/lamp_blk.jpg" alt="商品画像6">
+                    <p class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </p><p>lamp</p><p>¥6,990</p>
+                </div>
+                <div class="best_items_content">
                     <img src="../img/table.jpg" alt="商品画像7">
-                    <div class="item_tag">sale</div>
+                    <div class="sale_item_tag">sale</div>
                     <p class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star"></i>
-                    </p><p>table and chair set</p>
-                    <p>¥17,990<span>¥19,990</span></p>
+                    </p><p>table and chair set</p><p class="sale_price">¥17,990<span>¥19,990</span></p>
                 </div>
             </div>
         </div>
 
         <!-- シーン別 -->
-        <div class="content gallery">
-            <div class="gallery_title">
-                <p>gallery</p>
+        <div class="wrapper scene_container">
+            <div class="scene_title">
+                <div class="scene_heading">gallery</div>
                 <p>aaaaa</p>
             </div>
-            <div class="gallery_images">
+            <div class="scene_img">
                 <img src="../img/diningroom.jpg" alt="ダイニングルーム商品一覧">
                 <img src="../img/bedroom.jpg" alt="寝室消費日蘭">
                 <img src="../img/livingroom.jpg" alt="リビング商品一覧">
             </div>
-            <div class="scene">
-                <div class="scene_name">dining room</div>
-                <div class="scene_name">bed room</div>
-                <div class="scene_name">living room</div>
+            <div class="scene_name">
+                <p>dining room</p>
+                <p>bed room</p>
+                <p>living room</p>
             </div>
             <div class="shop_btn">
-                <div class="shop_now">shop now</div>
-                <div class="shop_now">shop now</div>
-                <div class="shop_now">shop now</div>
+                <div class="btn">shop now</div>
+                <div class="btn">shop now</div>
+                <div class="btn">shop now</div>
             </div>
         </div>
 
         <!-- ディスカウント商品 -->
-        <div class="content discount">
-            <div class="discount_images">
-                <img src="../img/plant.PNG" alt="ディスカウント商品イメージ画像" class="plant_img">
-                <img src="../img/chair_2.PNG" alt="ディスカウント商品イメージ画像" class="chair_img">
+        <div class="wrapper discount_container">
+            <div>
+                <img src="../img/plant.PNG" alt="ディスカウント商品イメージ画像" class="img_left">
+                <img src="../img/chair_2.PNG" alt="ディスカウント商品イメージ画像" class="img_right">
             </div>
             <div class="discount_detail">
-                <p class="discount_line_1">get <span>15%</span> off to your order</p>
-                <p class="discount_line_2">deal of the day</p>
+                <p>get <span>15%</span> off to your order</p>
+                <p>deal of the day</p>
             </div>
             <div class="countdown">
                 <p class="time"><span id="day"></span><br>days</p>
@@ -203,48 +230,48 @@
                 <p class="time"><span id="min"></span><br>mins</p>
                 <p class="time"><span id="sec"></span><br>secs</p>
             </div>
-            <div class="discount_button">shop now</div>
+            <div class="discount_btn">shop now</div>
         </div>
 
         <!-- サービス -->
-        <div class="content our_service">
+        <div class="wrapper service_container">
             <h2>our service</h2>
-            <div class="service_container">
-                <div class="service_detail">
+            <div class="service_content">
+                <div class="service_box">
                     <img src="../img/icon_truck.png" alt="サービスアイコン">
                     <p>free shipping</p>
-                    <p class="service_line">aaaaa</p>
+                    <p class="service_detail">aaaaa</p>
                 </div>
-                <div class="service_detail">
+                <div class="service_box">
                     <img src="../img/icon_money.png" alt="サービスアイコン">
                     <p>30 days return</p>
-                    <p class="service_line">aaaaa</p>
+                    <p class="service_detail">aaaaa</p>
                 </div>
-                <div class="service_detail">
+                <div class="service_box">
                     <img src="../img/icon_assembly.png" alt="サービスアイコン">
                     <p>assembly service</p>
-                    <p class="service_line">aaaaa</p>
+                    <p class="service_detail">aaaaa</p>
                 </div>
             </div>
         </div>
 
         <!-- インテリアコーディネート -->
-        <div class="content news">
+        <div class="wrapper room_container">
             <img src="../img/news2.jpg" alt="インテリアコーディネート例">
-            <div class="news_box">
+            <div class="room_content">
                 <p>room collection</p>
-                <div class="news_contents">
-                    <div class="explanation">no1</div>
-                    <div class="view_all">view all</div>
+                <div class="room_box">
+                    <div class="room_detail">no1</div>
+                    <div class="room_btn">view detail</div>
                 </div>
             </div>
         </div>
         
         <!-- ニュースレター -->
-        <div class="content news_letter">
+        <div class="wrapper news_letter">
             <p>join our news letter</p>
             <input type="text" placeholder="enter your email">
-            <button type="button">join</button>
+            <button>join</button>
         </div>
 
         <script src="../js/sample.js"></script>
