@@ -43,8 +43,8 @@ p {
     position: relative;
     top: 80px;
     display: flex;
-    padding-bottom: 30px;
     overflow: hidden;
+    font-size: 20px;
 }  
 .slide {
     width: 100%;
@@ -71,7 +71,7 @@ p {
     padding: 20px;
     margin-top: -30px;
     color: white;
-    font-size: 25px;
+    font-size: 1em;
     transition: all 0.2s ease;
 }  
 .next {
@@ -86,28 +86,28 @@ p {
 }
 .cap1 {
     top: 20%;
-    right: 30%;
+    right: 20%;
     text-align: right;
 }
 .cap1 .title {
-    font-size: 100px;
+    font-size: 5em;
     font-weight: bold;
     color: white;
 }
 .cap1 .heading {
-    font-size: 40px;
+    font-size: 2em;
 }
 .cap2 {
     top: 30%;
-    left: 20%;
+    left: 15%;
 }
 .cap2 .title {
-    font-size: 40px;
+    font-size: 2em;
     font-weight: lighter;
     line-height: 0;
 }
 .cap2 .heading {
-    font-size: 60px;
+    font-size: 3em;
     font-weight: 1000;
 }
 .cap2 .slide_btn {
@@ -115,8 +115,8 @@ p {
     background: #515254;
 }
 .slide_btn {
-    padding: 5px 10px;
-    font-size: 20px;
+    padding: 0.25em 0.5em;
+    font-size: 1em;
     width: 30%;
     cursor: pointer;
     font-weight: bold;
@@ -129,15 +129,15 @@ p {
     text-align: center;
 }
 .cap3 .title {
-    font-size: 60px;
+    font-size: 3em;
     font-weight: bold;
 }
 .cap3 .heading {
-    font-size: 40px;
+    font-size: 2em;
 }
 .cap3 .slide_btn {
     border: 1px solid white;
-    margin: 10px auto;
+    margin: 0.5em auto;
 }
 .overlay {
     position: absolute;
@@ -158,22 +158,21 @@ p {
     left: 10%;
 }
 .cap4 p:first-child {
-    font-size: 20px;
+    font-size: 1em;
     color: #9cbb1c;
 }
 .cap4 .title {
-    font-size: 60px;
+    font-size: 3em;
     font-weight: bold;
-    padding: 20px 0;
 }
 .cap4 .heading {
-    font-size: 30px;
+    font-size: 1.5em;
     opacity: 0.8;
 }
 .cap4 .slide_btn {
-    margin: 100px 0 0;
+    margin: 5em 0 0;
     border-bottom: 3px solid #9cbb1c;
-    padding-bottom: 5px;
+    padding-bottom: 0.25em;
     width: 20%;
 }
 .numbertext {
@@ -184,7 +183,7 @@ p {
 }
 .dots {
     position: absolute;
-    bottom: 35px;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
@@ -205,6 +204,12 @@ p {
 /**
  * カテゴリー
  */
+.category_container {
+    padding-top: 50px;
+}
+.category_head {
+    margin-bottom: -10px;
+}
 .category_container ul {
     display: flex;
     justify-content: center;
@@ -297,6 +302,7 @@ p {
  */
 .scene_container {
     position: relative;
+    padding-top: 20px;
 }
 .scene_title {
     position: absolute;
@@ -363,7 +369,7 @@ p {
 .discount_container {
     background-color: #F2F2F2;
     height: 270px;
-    margin: 0 10%;
+    margin: 8% 10% 5%;
     text-align: center;
     position: relative;
 }
