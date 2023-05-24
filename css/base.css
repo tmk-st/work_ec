@@ -215,9 +215,6 @@ p {
     justify-content: center;
     padding: 0;
 }
-.category_container img {
-    width: 80%;
-}
 .category_container li {
     width: 9%;
     list-style: none;
@@ -228,6 +225,9 @@ p {
 }
 .category_container li:hover {
     opacity: 1;
+}
+.category_container img {
+    width: 80%;
 }
 .category_container p {
     position: absolute;
@@ -254,16 +254,17 @@ p {
 }
 .best_items_content {
     position: relative;
+    font-size: 10px;
 }
 .best_items_content img {
-    width: 200px;
-    height: 280px;
-    padding: 10px 30px;
+    width: 20em;
+    height: 28em;
+    padding: 1em 3em;
     cursor: pointer;
 }
 .best_items_content p {
     padding-top: 0;
-    padding-left: 30px;
+    padding-left: 2em;
     font-size: 1.5rem;
 }
 .sale_price {
@@ -311,21 +312,22 @@ p {
     top: 40%;
 }
 .scene_heading {
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: bold;
     border-bottom: 2px solid #FFD768;
-    padding-bottom: 5px;
+    padding-bottom: 0.25em;
 }
 .scene_title p {
-    padding-top: 10px;
+    padding-top: 0.5em;
 }
 .scene_img {
     text-align: end;
+    font-size: 20px;
 }
 .scene_container img {
     width: 25%;
     border-radius:50%;
-    padding: 25px;
+    padding: 1em;
 }
 .scene_name {
     color: white;
@@ -335,11 +337,11 @@ p {
     position: absolute;
     top: 30%;
     right: 0;
+    font-size: 20px;
 }
 .scene_name p {
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
-    padding: 25px;
 }
 .shop_btn {
     display: flex;
@@ -348,12 +350,12 @@ p {
     position: absolute;
     top: 45%;
     right: 0;
+    font-size: 20px;
 }
 .shop_btn .btn {
     border: 2px solid;
-    font-size: 20px;
-    padding: 5px 20px;
-    margin: 20px 0;
+    padding: 0.25em 1em;
+    margin: 0.5em 0;
     cursor: pointer;
 }
 .shop_btn .btn:hover {
