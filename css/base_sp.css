@@ -48,6 +48,9 @@
     /**
     * 人気商品
     */
+    .best_items_container {
+        padding: 10px 0;
+    }
     .best_items_content {
         font-size: 5px;
     }
@@ -67,6 +70,15 @@
     .shop_btn .btn {
         border: 1px solid
     }
+    #page2 .room_btn {
+        margin: auto 0 38px 7px;
+    }
+    #page2 .room_box {
+        left: 4%;
+    }
+    #page3 .room_box {
+        left: 52%;
+    }
 
     /**
     * ディスカウント商品
@@ -79,5 +91,60 @@
     }
     .img_right {
         width: 25%;
+    }
+    .discount_detail, .countdown, .discount_btn {
+        font-size: 5px;
+    }
+    #day, #hour, #min, #sec {
+        font-size: 4rem;
+    }
+
+    /**
+    * サービス
+    */
+    .service_container {
+        font-size: 13px;
+    }
+    .service_content {
+        margin: 0 15px;
+    }
+    .service_box {
+        padding: 0.3em;
+        margin: 0.3em;
+    }
+    .service_box img {
+        width: 40%;
+    }
+
+    /**
+    * インテリアコーディネート
+    */
+    .room_container {
+        height: 160px;
+    }
+    .room_content p {
+        font-size: 20px;
+        margin: 1em;
+    }
+    .room_box {
+        font-size: 7px;
+    }
+    .room_btn {
+        border: 1px solid white;
+        padding: 1em 0.5em;
+    }
+
+    /**
+    * ニュースレター
+    */
+    .news_letter {
+        font-size: 8px;
+        margin: 20px auto;
+    }
+    .news_letter input {
+        height: 1em;
+    }
+    .news_letter button {
+        padding: 0 1em;
     }
 }

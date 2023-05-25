@@ -124,8 +124,8 @@ p {
 }
 .cap3 {
     color: white;
-    top: 40%;
-    left: 50%;
+    top: 20%;
+    right: 20%;
     text-align: center;
 }
 .cap3 .title {
@@ -136,15 +136,8 @@ p {
     font-size: 2em;
 }
 .cap3 .slide_btn {
-    border: 1px solid white;
+    border: 2px solid #FFD768;
     margin: 0.5em auto;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    width: 90%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 .slide4 {
     background: #F2F2F2;
@@ -390,36 +383,38 @@ p {
 .discount_detail {
     position: absolute;
     top: 15%;
-    left: 50%;
+    left: 40%;
+    font-size: 20px;
 }
 .discount_detail p:first-child {
-    font-size: 20px;
+    font-size: 1em;
 }
 .discount_detail span {
     color: red;
 }
 .discount_detail p:last-child {
-    font-size: 30px;
+    font-size: 1.5em;
 }
 .countdown {
     display: flex;
     position: absolute;
     top: 40%;
     left: 50%;
+    font-size: 10px;
 }
 .time {
-    padding: 2rem 3rem;
+    padding: 0 3em;
 }  
 #day, #hour, #min, #sec {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .discount_btn {
     position: absolute;
     cursor: pointer;
-    border: 2px solid;
+    border: 1px solid;
     font-size: 20px;
-    width: 10%;
-    padding: 5px;
+    width: 15%;
+    padding: 0.3em;
     margin: 0 auto;
     bottom: 10%;
     left: 50%;
@@ -440,22 +435,21 @@ p {
 }
 .service_content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .service_box {
     border: 2px solid #C0C0C0;
-    padding: 20px;
     text-align: center;
-    margin: 20px;
+    padding: 0.9em;
+    margin: 0.9em;
 }
 .service_box img {
     width: 25%;
     opacity: 0.7;
-    padding-bottom: 10px;
+    padding-bottom: 0.4em;
 }
 .service_detail {
-    font-size: 15px;
+    font-size: 0.8em;
     color: #C0C0C0;
 }
 
@@ -464,26 +458,46 @@ p {
  */
 .room_container {
     position: relative;
+    height: 60em;
+    color: white;
+}
+#page, #page2, #page3 {
+    position: absolute;
     display: flex;
+    transition: opacity 0.3s ease;
+    top: 10%;
+    height: 100%;
+    width: 100%;
 }
 .room_container img {
+    object-fit: cover;
     width: 50%;
-}
-.room_detail {
-    font-size: 30px;
-    background-color: white;
-    padding: 50px 200px 100px 50px;
 }
 .room_content {
-    background-color: #FFD768;
     width: 50%;
 }
+#page .room_content {
+    background-color: #FFD768;
+}
+#page2 .room_content {
+    background-color: #007394;
+}
+#page3 .room_content {
+    background-color: #948779;
+}
 .room_content p {
-    color: white;
     font-size: 35px;
     font-weight: bold;
-    margin: 100px;
+    margin: 2em;
     text-align: right;
+}
+#page2 .room_content P {
+    bottom: 0;
+    position: absolute;
+    right: 50%;
+}
+#page3 .room_content P {
+    text-align: left;
 }
 .room_box {
     position: absolute;
@@ -491,15 +505,31 @@ p {
     align-items: flex-end;
     top: 50%;
     left: 55%;
+    font-size: 20px;
+}
+#page2 .room_box {
+    top: 15%;
+    left: 5%;
+}
+#page3 .room_box {
+    left: 60%;
+}
+.room_detail {
+    font-size: 1.5em;
+    background-color: white;
+    color: #515254;
+    /* padding: 3em 7em 2em 2em; */
 }
 .room_btn {
-    color: white;
-    border: 2px solid white;
-    padding: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-    height: 30px;
+    border: 2px solid;
+    padding: 1em;
+    margin: 0 1em;
+    font-size: 1em;
+    height: 1.5em;
     cursor: pointer;
+}
+#page2 .room_btn {
+    margin: auto 0 112px 20px;
 }
 
 /**
@@ -507,32 +537,30 @@ p {
  */
 .news_letter {
     width: 50%;
-    margin: 100px auto;
     font-size: 20px;
     text-align: center;
     justify-content: center;
 }
 input::placeholder {
     color: #dcdcdc;
-    font-size: 15px;
+    font-size: 0.75em;
 }
 .news_letter p {
-    margin: 10px;
+    margin: 1em;
 }
 .news_letter input {
-    height: 40px;
+    height: 3em;
     width: 70%;
-    padding: 0 10px;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .news_letter button {
-    padding: 10px 30px;
-    margin: 10px;
+    padding: 0.7em 1.5em;
+    margin-left: 0.5em;
     background-color: #FFD768;
     border: none;
     color: white;
-    font-size: 15px;
+    font-size: 0.75em;
     cursor: pointer;
     font-family: 'Alegreya Sans SC', sans-serif;
 }

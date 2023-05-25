@@ -74,3 +74,24 @@ function countdown() {
 }
 countdown();
 setInterval(countdown,1000);
+
+// 写真切り替え
+var button = document.getElementById('toggleButton');
+var element1 = document.getElementById('page');
+var element2 = document.getElementById('page2');
+var element3 = document.getElementById('page3');
+var elements = [element1, element2, element3];
+var counter = 0;
+
+elements[1].style.opacity = 0; // 初期状態で一番目の要素を表示する
+elements[2].style.opacity = 0;
+
+function handleClick() {
+  elements[counter].style.opacity = 0;
+  counter++;
+  if (counter >= elements.length) { // カウンターが要素の数以上になった場合、最初の要素に戻す
+    counter = 0;
+  }
+    elements[counter].style.opacity = 1;
+}
+button.addEventListener('click', handleClick);
