@@ -70,15 +70,6 @@
     .shop_btn .btn {
         border: 1px solid
     }
-    #page2 .room_btn {
-        margin: auto 0 38px 7px;
-    }
-    #page2 .room_box {
-        left: 4%;
-    }
-    #page3 .room_box {
-        left: 52%;
-    }
 
     /**
     * ディスカウント商品
@@ -131,7 +122,15 @@
     }
     .room_btn {
         border: 1px solid white;
-        padding: 1em 0.5em;
+    }
+    #page .room_box {
+        left: 53%;
+    }
+    #page2 .room_box {
+        left: 4%;
+    }
+    #page3 .room_box {
+        left: 51%;
     }
 
     /**
