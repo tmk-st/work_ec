@@ -57,6 +57,9 @@
     .best_items_content p {
         padding-left: 1em;
     }
+    .best_items_img {
+        padding-bottom: 0;
+    }
 
     /**
     * シーン別

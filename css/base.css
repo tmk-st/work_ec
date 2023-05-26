@@ -239,12 +239,11 @@ p {
 .best_items_img {
     display: flex;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding-bottom: 2em;
 }
-.best_items_img::-webkit-scrollbar {
+/* .best_items_img::-webkit-scrollbar {
     display: none;
-}
+} */
 .best_items_content {
     position: relative;
     font-size: 10px;
@@ -423,7 +422,7 @@ p {
     transition: all .1s ease;
     background: #FFD768;
     color: white;
-    border: 2px solid #FFD768;
+    border: 1px solid #FFD768;
 }
 
 /**
@@ -530,7 +529,6 @@ p {
     margin: 0 1em;
     font-size: 1em;
     height: 1.5em;
-    cursor: pointer;
 }
 #page2 .room_btn {
     margin: 0 0 auto 1em;
