@@ -16,10 +16,13 @@ h2 {
     font-size: 25px;
 }
 .wrapper {
-    margin: 100px 7%;
+    margin: 80px 7%;
 }
 p {
     margin: 0;
+}
+#footer {
+    height: 150px;
 }
 
 /**
@@ -41,7 +44,7 @@ p {
 .top_container {
     width: 100%;
     position: relative;
-    top: 80px;
+    top: -70px;
     display: flex;
     overflow: hidden;
     font-size: 20px;
@@ -197,11 +200,9 @@ p {
 /**
  * カテゴリー
  */
-.category_container {
-    padding-top: 50px;
-}
 .category_head {
     margin-bottom: -10px;
+    margin-top: -80px;
 }
 .category_container ul {
     display: flex;
@@ -242,9 +243,6 @@ p {
     overflow-x: scroll;
     padding-bottom: 2em;
 }
-/* .best_items_img::-webkit-scrollbar {
-    display: none;
-} */
 .best_items_content {
     position: relative;
     font-size: 10px;
@@ -296,7 +294,6 @@ p {
  */
 .scene_container {
     position: relative;
-    /* padding-top: 20px; */
 }
 .scene_imgs {
     font-size: 20px;

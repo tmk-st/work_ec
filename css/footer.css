@@ -9,7 +9,6 @@ nav {
     color: white;
     background: #515254;
     position: absolute;
-    /* bottom: 0; */
     width: 100%;
     font-size: 20px;
 }
@@ -34,7 +33,7 @@ li:hover {
     position: absolute;
     top: -1px;
 }
-.ccc {
+.copyright {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -47,5 +46,9 @@ li:hover {
     }
     nav {
         font-size: 10px;
+    }
+    .copyright {
+        font-size: 10px;
+        bottom: 5px;
     }
 }

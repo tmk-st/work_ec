@@ -11,6 +11,9 @@
     h2 {
         font-size: 15px;
     }
+    #footer {
+        height: 80px;
+    }
 
     /**
     * トップ画面
@@ -18,9 +21,11 @@
     .top_logo {
         width: 30px;
         font-size: 15px;
+        top: 35px;
     }
     .top_container {
         font-size: 10px;
+        top: -100px;
     }
     .slide_img {
         height: 200px;
@@ -41,6 +46,9 @@
     /**
     * カテゴリー
     */
+    .category_head {
+        margin-top: -100px;
+    }
     .category_container li {
         width: 15%;
     }
