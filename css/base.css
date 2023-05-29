@@ -16,7 +16,7 @@ h2 {
     font-size: 25px;
 }
 .wrapper {
-    margin: 100px auto;
+    margin: 100px 7%;
 }
 p {
     margin: 0;
@@ -222,10 +222,11 @@ p {
 .category_container img {
     width: 80%;
 }
-.category_container p {
+.category_name {
     position: absolute;
     bottom: 0;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1.5rem;
 }
 
@@ -295,60 +296,52 @@ p {
  */
 .scene_container {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
-.scene_title {
-    position: absolute;
+.scene_imgs {
     font-size: 20px;
-    margin-left: 4%;
-    top: 40%;
-}
-.scene_heading {
-    font-size: 1.5em;
-    font-weight: bold;
-    border-bottom: 2px solid #FFD768;
-    padding-bottom: 0.25em;
-}
-.scene_title p {
-    padding-top: 0.5em;
+    display: flex;
 }
 .scene_img {
+    width: calc(100%/3);
+}
+.scene_img:last-child {
     text-align: end;
-    font-size: 20px;
+}
+.scene_img:nth-child(2) {
+    text-align: center;
 }
 .scene_container img {
-    width: 25%;
-    border-radius:50%;
-    padding: 1em;
+    width: 95%;
 }
 .scene_name {
     color: white;
     display: flex;
-    justify-content: space-around;
-    width: 86%;
+    width: 100%;
     position: absolute;
-    top: 30%;
-    right: 0;
+    top: 45%;
     font-size: 20px;
 }
 .scene_name p {
     font-size: 2em;
     font-weight: bold;
+
+    width: calc(100%/3);
+    text-align: center;
 }
 .shop_btn {
     display: flex;
-    justify-content: space-around;
-    width: 86%;
+    width: 100%;
     position: absolute;
-    top: 45%;
-    right: 0;
+    top: 60%;
     font-size: 20px;
 }
 .shop_btn .btn {
     border: 2px solid;
     padding: 0.25em 1em;
-    margin: 0.5em 0;
     cursor: pointer;
+    width: calc(100%/3);
+    text-align: center;
 }
 .shop_btn .btn:hover {
     color: #CCCCCC;
@@ -358,12 +351,11 @@ p {
 }
 
 /**
- * ディスカウント商品
+ * ディスカウント
  */
 .discount_container {
     background-color: #F2F2F2;
     height: 270px;
-    margin: 8% 10% 5%;
     text-align: center;
     position: relative;
 }
@@ -381,8 +373,9 @@ p {
 }
 .discount_detail {
     position: absolute;
-    top: 15%;
-    left: 40%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
 }
 .discount_detail p:first-child {
@@ -399,6 +392,7 @@ p {
     position: absolute;
     top: 40%;
     left: 50%;
+    transform: translateX(-50%);
     font-size: 10px;
 }
 .time {
@@ -417,6 +411,7 @@ p {
     margin: 0 auto;
     bottom: 10%;
     left: 50%;
+    transform: translateX(-50%);
 }
 .discount_btn:hover {
     transition: all .1s ease;
@@ -429,18 +424,16 @@ p {
  * サービス一覧
  */
 .service_container {
-    width: 100vw;
     font-size: 25px;
 }
 .service_content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .service_box {
     border: 2px solid #C0C0C0;
     text-align: center;
     padding: 0.9em;
-    margin: 0.9em;
 }
 .service_box img {
     width: 25%;
@@ -463,7 +456,6 @@ p {
     position: absolute;
     display: flex;
     transition: opacity 0.3s ease;
-    top: 10%;
     height: 100%;
     width: 100%;
 }
@@ -520,7 +512,7 @@ p {
     padding: 1em;
 } 
 .detail_head {
-    font-size: 1.5em; /* 文字のサイズを指定 */
+    font-size: 1.5em;
 }
 .room_btn {
     color: white;
@@ -538,10 +530,8 @@ p {
  * ニュースレター
  */
 .news_letter {
-    width: 50%;
     font-size: 20px;
     text-align: center;
-    justify-content: center;
 }
 input::placeholder {
     color: #dcdcdc;
@@ -552,7 +542,7 @@ input::placeholder {
 }
 .news_letter input {
     height: 3em;
-    width: 70%;
+    width: 50%;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
 }

@@ -9,7 +9,7 @@ nav {
     color: white;
     background: #515254;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     font-size: 20px;
 }
@@ -33,6 +33,12 @@ li:hover {
 .li::before {
     position: absolute;
     top: -1px;
+}
+.ccc {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {

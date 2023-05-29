@@ -90,7 +90,7 @@ img {
         margin: 0.5em 1em;
     }
     input::placeholder {
-        font-size: 5px;
+        font-size: 2px;
     }
     .fas {
         font-size: 0.5rem;
