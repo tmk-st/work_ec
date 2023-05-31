@@ -86,12 +86,18 @@ var counter = 0;
 elements[1].style.opacity = 0; // 初期状態で一番目の要素を表示する
 elements[2].style.opacity = 0;
 
+elements[0].style.zIndex = 3;  // cssでhover効果付けるため順番指定
+elements[1].style.zIndex = 2;
+elements[2].style.zIndex = 1;
+
 function handleClick() {
   elements[counter].style.opacity = 0;
+  elements[counter].style.zIndex = 1;
   counter++;
   if (counter >= elements.length) { // カウンターが要素の数以上になった場合、最初の要素に戻す
     counter = 0;
   }
     elements[counter].style.opacity = 1;
+    elements[counter].style.zIndex = 3;
 }
 button.addEventListener('click', handleClick);

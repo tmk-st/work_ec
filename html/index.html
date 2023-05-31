@@ -10,7 +10,29 @@
         <script src="https://kit.fontawesome.com/376c75aa1e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <iframe src="header.html" frameborder="0" width="100%"></iframe>
+        <iframe src="header.html" frameborder="0" width="100%" style="z-index: 99;"></iframe>
+
+        <div class="hamburger_outer">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <div class="search_btn"><i class="fas fa-search fa-fw"></i></div>
+                <ul>
+                    <li>
+                        <a href="#">my page</a>
+                    </li>
+                    <li>
+                        <a href="#">categories</a>
+                    </li>
+                    <li>
+                        <a href="#">news</a>
+                    </li>
+                    <li>
+                        <a href="#">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <!-- トップ画面 -->
         <div class="top_logo">H</div>
@@ -255,9 +277,8 @@
 
         <!-- インテリアコーディネート -->
         <div class="wrapper room_container">
-            <div id="toggleButton" style="font-size:20px; text-align: center; cursor: pointer; color: black;">→</div>
+            <div id="toggleButton"><i class="fa-solid fa-chevron-right"></i></div>
             <div id="page">
-                <img src="../img/design1.jpg">
                 <div class="room_content">
                     <p>room collection</p>
                     <div class="room_box">
@@ -268,6 +289,7 @@
                         <div class="room_btn">view detail</div>
                     </div>
                 </div>
+                <img src="../img/design1.jpg">
             </div>
             <div id="page2">
                 <div class="room_content">
@@ -283,7 +305,6 @@
                 <img src="../img/design2.jpg">
             </div>
             <div id="page3">
-                <img src="../img/design3.jpg">
                 <div class="room_content">
                     <p>room collection</p>
                     <div class="room_box">
@@ -294,6 +315,7 @@
                         </div>
                     </div>
                 </div>
+                <img src="../img/design3.jpg">
             </div>
         </div>
         

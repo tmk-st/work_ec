@@ -14,14 +14,18 @@
     #footer {
         height: 80px;
     }
+    .hamburger_outer {
+        display: block;
+    }
 
     /**
     * トップ画面
     */
     .top_logo {
-        width: 30px;
-        font-size: 15px;
-        top: 35px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        top: 20px;
     }
     .top_container {
         font-size: 10px;
@@ -146,13 +150,16 @@
         border: 1px solid white;
     }
     #page .room_box {
-        left: 53%;
+        right: 53%;
     }
     #page2 .room_box {
-        left: 4%;
+        right: 4%;
     }
     #page3 .room_box {
-        left: 51%;
+        right: 51%;
+    }
+    #toggleButton {
+        font-size: 15px;
     }
 
     /**

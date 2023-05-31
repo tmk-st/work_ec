@@ -73,31 +73,6 @@ img {
 
 @media screen and (max-width: 480px) {
     header {
-        font-size: 10px;
-        padding: 10px;
-    }
-    ul {
-        width: 100%;
-    }
-    li {
-        margin: 0 0.3rem;
-    }
-    .search_box {
-        width: 40%;
-    }
-    input {
-        height: 20px;
-        margin: 0.5em 1em;
-    }
-    input::placeholder {
-        font-size: 2px;
-    }
-    .fas {
-        font-size: 0.5rem;
-    }
-    .header_icon {
-        margin-top: 12px;
-        width: 15%;
-        text-align: end;
+        display: none;
     }
 }
