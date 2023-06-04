@@ -14,6 +14,13 @@ body {
 h2 {
     text-align: center;
     font-size: 25px;
+    margin: 0;
+}
+h3 {
+    color: #C0C0C0;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 0;
 }
 .wrapper {
     margin: 100px 7%;
@@ -164,40 +171,57 @@ p {
 }  
 .prev:hover, .next:hover {
     color: #FFD768;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
 }  
 .slide_caption {
     position: absolute;
 }
-.cap1 {
+.top {
     top: 20%;
     right: 20%;
     text-align: right;
 }
-.cap1 .title {
+.top .title {
     font-size: 5em;
     font-weight: bold;
     color: white;
 }
-.cap1 .heading {
+.top .heading {
     font-size: 2em;
 }
-.cap2 {
+.top_detail {
+    font-size: 0.8em;
+    color: white;
+    text-shadow: 1px 1px 2px #515254;
+    padding-top: 0.5em;
+    font-family: "HiraKakuProN-W3";
+}
+.br_sp {
+    display: none;
+}
+.newarrival {
     top: 30%;
     left: 15%;
 }
-.cap2 .title {
+.newarrival .title {
     font-size: 2em;
     font-weight: lighter;
     line-height: 0;
 }
-.cap2 .heading {
+.newarrival .heading {
     font-size: 3em;
     font-weight: 1000;
 }
-.cap2 .slide_btn {
+.newarrival .slide_btn {
     color: white;
     background: #515254;
+    margin-top: 1em;
+}
+.newarrival .slide_btn:hover {
+    color: #515254;
+    background: white;
+    font-weight: bold;
+    transition: all.2s ease;
 }
 .slide_btn {
     padding: 0.25em 0.5em;
@@ -207,22 +231,27 @@ p {
     font-weight: bold;
     text-align: center;
 }
-.cap3 {
+.kitchen_items {
     color: white;
     top: 20%;
-    right: 20%;
-    text-align: center;
+    right: 15%;
+    text-align: right;
 }
-.cap3 .title {
+.kitchen_items .title {
     font-size: 3em;
     font-weight: bold;
 }
-.cap3 .heading {
-    font-size: 2em;
+.kitchen_items .heading {
+    color: #515254;
+    text-shadow: 1px 1px 2px white;
 }
-.cap3 .slide_btn {
+.kitchen_items .slide_btn {
     border: 2px solid #FFD768;
-    margin: 0.5em auto;
+    margin: 0.5em 0 0 auto;
+}
+.kitchen_items .slide_btn:hover {
+    background-color: #FFD768;
+    transition: all .2s ease;
 }
 .slide4 {
     background: #F2F2F2;
@@ -231,27 +260,33 @@ p {
     width: 60%;
     margin: 0 0 0 auto;
 }
-.cap4 {
+.green_items {
     top: 25%;
     left: 10%;
 }
-.cap4 p:first-child {
+.green_items p:first-child {
     font-size: 1em;
     color: #9cbb1c;
 }
-.cap4 .title {
+.green_items .title {
     font-size: 3em;
     font-weight: bold;
 }
-.cap4 .heading {
-    font-size: 1.5em;
+.green_items .heading {
+    font-size: 1em;
     opacity: 0.8;
+    text-shadow: 1px 1px 2px white;
 }
-.cap4 .slide_btn {
+.green_items .slide_btn {
     margin: 5em 0 0;
     border-bottom: 3px solid #9cbb1c;
     padding-bottom: 0.25em;
     width: 20%;
+}
+.green_items .slide_btn:hover {
+    color: white;
+    text-shadow: 1px 1px 3px #515254;
+    transition: all .2s ease;
 }
 .numbertext {
     font-size: 20px;
@@ -283,7 +318,6 @@ p {
  * カテゴリー
  */
 .category_head {
-    margin-bottom: -10px;
     margin-top: -80px;
 }
 .category_container ul {
@@ -404,9 +438,9 @@ p {
 .scene_name p {
     font-size: 2em;
     font-weight: bold;
-
     width: calc(100%/3);
     text-align: center;
+    text-shadow: 1px 1px 3px #515254;
 }
 .shop_btn {
     display: flex;
@@ -416,17 +450,20 @@ p {
     font-size: 20px;
 }
 .shop_btn .btn {
-    border: 2px solid;
-    padding: 0.25em 1em;
+    padding: 0.25em;
     cursor: pointer;
     width: calc(100%/3);
     text-align: center;
+    margin: 0 7em;
+    background-color: white;
+    color: #CCCCCC;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 20px;
 }
 .shop_btn .btn:hover {
-    color: #CCCCCC;
-    border: 2px solid white;
-    background-color: white;
-    transition: all .1s ease;
+    background-color: #515254;
+    transition: all .2s ease;
+    color: white;
 }
 
 /**
@@ -437,6 +474,8 @@ p {
     height: 270px;
     text-align: center;
     position: relative;
+    margin-top: 2em;
+    margin-top: 130px;
 }
 .img_left {
     position: absolute;
@@ -493,7 +532,7 @@ p {
     transform: translateX(-50%);
 }
 .discount_btn:hover {
-    transition: all .1s ease;
+    transition: all .2s ease;
     background: #FFD768;
     color: white;
     border: 1px solid #FFD768;
@@ -502,15 +541,14 @@ p {
 /**
  * サービス一覧
  */
-.service_container {
-    font-size: 25px;
-}
 .service_content {
     display: flex;
     justify-content: space-between;
+    font-size: 25px;
 }
 .service_box {
-    border: 2px solid #C0C0C0;
+    color: #C0C0C0;
+    border: 2px solid;
     text-align: center;
     padding: 0.9em;
 }
@@ -520,8 +558,10 @@ p {
     padding-bottom: 0.4em;
 }
 .service_detail {
+    color: #515254;
+}
+.service_box p {
     font-size: 0.8em;
-    color: #C0C0C0;
 }
 
 /**
@@ -530,6 +570,7 @@ p {
 .room_container {
     position: relative;
     height: 60em;
+    margin-top: 130px;
 }
 #page, #page2, #page3 {
     position: absolute;
@@ -585,9 +626,14 @@ p {
     height: 7em;
     width: 13em;
     padding: 1em;
+    font-size: 1em;
 } 
 .detail_head {
     font-size: 1.5em;
+}
+.detail {
+    font-size: 0.7em;
+    margin-top: 2em;
 }
 .room_btn {
     color: white;
@@ -600,7 +646,7 @@ p {
 .room_btn:hover {
     cursor: pointer;
     background: white;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
     font-weight: bold;
 }
 #page .room_btn:hover {
@@ -639,8 +685,8 @@ input::placeholder {
     color: #dcdcdc;
     font-size: 0.75em;
 }
-.news_letter p {
-    margin: 1em;
+.news_letter_heading {
+    font-size: 0.7em;
 }
 .news_letter input {
     height: 3em;

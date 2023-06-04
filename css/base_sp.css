@@ -11,6 +11,10 @@
     h2 {
         font-size: 15px;
     }
+    h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
     #footer {
         height: 80px;
     }
@@ -34,8 +38,24 @@
     .slide_img {
         height: 200px;
     }
-    .cap4 {
+    .top {
+        top: 7%;
+        right: 15%;
+    }
+    .top .heading {
+        line-height: 1;
+    }
+    .top_detail {
+        font-size: 0.5em;
+    }
+    .newarrival {
+        top: 25%;
+    }
+    .green_items {
         top: 15%;
+    }
+    .br_sp {
+        display: block;
     }
     .numbertext {
         font-size: 10px;
@@ -52,6 +72,9 @@
     */
     .category_head {
         margin-top: -100px;
+    }
+    .category_container ul {
+        margin-top: 0;
     }
     .category_container li {
         width: 15%;
@@ -85,8 +108,12 @@
     .scene_container img {
         padding: 0.5em;
     }
+    .scene_name p {
+        font-size: 1.5em;
+    }
     .shop_btn .btn {
-        border: 1px solid
+        margin: 0 2em;
+        padding: 0.1em;
     }
 
     /**
@@ -94,6 +121,7 @@
     */
     .discount_container {
         height: 100px;
+        margin-top: 50px;
     }
     .img_left {
         width: 30%;
@@ -122,12 +150,12 @@
     .service_container {
         font-size: 13px;
     }
-    .service_content {
-        margin: 0 15px;
-    }
     .service_box {
         padding: 0.3em;
         margin: 0.3em;
+    }
+    .service_box p {
+        font-size: 0.4em;
     }
     .service_box img {
         width: 40%;
@@ -138,6 +166,7 @@
     */
     .room_container {
         height: 160px;
+        margin-top: 50px;
     }
     .room_content p {
         font-size: 20px;
@@ -153,7 +182,7 @@
         right: 53%;
     }
     #page2 .room_box {
-        right: 4%;
+        left: 4%;
     }
     #page3 .room_box {
         right: 51%;
