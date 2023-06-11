@@ -11,10 +11,6 @@
     h2 {
         font-size: 15px;
     }
-    h3 {
-        font-size: 1rem;
-        margin: 0;
-    }
     #footer {
         height: 80px;
     }
@@ -45,17 +41,11 @@
     .top .heading {
         line-height: 1;
     }
-    .top_detail {
-        font-size: 0.5em;
-    }
     .newarrival {
         top: 25%;
     }
     .green_items {
         top: 15%;
-    }
-    .br_sp {
-        display: block;
     }
     .numbertext {
         font-size: 10px;
@@ -65,22 +55,6 @@
     .dot {
         height: 5px;
         width: 5px;
-    }
-
-    /**
-    * カテゴリー
-    */
-    .category_head {
-        margin-top: -100px;
-    }
-    .category_container ul {
-        margin-top: 0;
-    }
-    .category_container li {
-        width: 15%;
-    }
-    .category_container p {
-        font-size: 0.5rem;
     }
 
     /**
@@ -97,23 +71,6 @@
     }
     .best_items_img {
         padding-bottom: 0;
-    }
-
-    /**
-    * シーン別
-    */
-    .scene_title, .scene_img, .scene_name, .shop_btn {
-        font-size: 10px;
-    }
-    .scene_container img {
-        padding: 0.5em;
-    }
-    .scene_name p {
-        font-size: 1.5em;
-    }
-    .shop_btn .btn {
-        margin: 0 2em;
-        padding: 0.1em;
     }
 
     /**

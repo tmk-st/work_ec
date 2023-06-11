@@ -5,28 +5,62 @@
  */
 html {
     font-size: 62.5%;
+    background-color: #f8f8f8;;
 }
 body {
     font-family: 'Alegreya Sans SC', sans-serif;
     margin: 0;
     color: #515254;
 }
-h2 {
-    text-align: center;
-    font-size: 25px;
-    margin: 0;
-}
-h3 {
-    color: #C0C0C0;
-    text-align: center;
-    font-weight: 100;
-    margin-top: 0;
-}
 .wrapper {
-    margin: 100px 7%;
+    margin: 100px 10%;
 }
 p {
     margin: 0;
+}
+h2 {
+    font-size: 25px;
+    width: 18vw;
+    margin: 0;
+}
+h3 {
+    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    margin: 0;
+}
+.container {
+    width: calc(100% - 18vw);
+    font-size: 30px;
+}
+.btn {
+    display: flex;
+    margin-left: 11em;
+    margin-top: 1.5em;
+    font-size: 18px;
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    right: 0;
+    line-height: 0;
+}
+.arrow_bar {
+    width: 16rem;
+    height: 1px;
+}
+.arrow_inner {
+    height: 100%;
+    background-color: #515254;
+}
+.arrow_head {
+    position: absolute;
+    top: 55%;
+    right: -3px;
+    font-size: 12px;
 }
 #footer {
     height: 150px;
@@ -114,7 +148,7 @@ p {
 }
 
 /**
- * トップ画面
+ * トップ
  */
 .top_logo {
     position: absolute;
@@ -177,24 +211,23 @@ p {
     position: absolute;
 }
 .top {
-    top: 20%;
-    right: 20%;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
     text-align: right;
 }
 .top .title {
-    font-size: 5em;
-    font-weight: bold;
+    font-size:  20em;
     color: white;
+    height: 400px;
 }
 .top .heading {
+    color: white;
     font-size: 2em;
 }
-.top_detail {
-    font-size: 0.8em;
-    color: white;
-    text-shadow: 1px 1px 2px #515254;
-    padding-top: 0.5em;
-    font-family: "HiraKakuProN-W3";
+.top .heading span {
+    font-size: 0.5em;
+    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
 .br_sp {
     display: none;
@@ -272,11 +305,6 @@ p {
     font-size: 3em;
     font-weight: bold;
 }
-.green_items .heading {
-    font-size: 1em;
-    opacity: 0.8;
-    text-shadow: 1px 1px 2px white;
-}
 .green_items .slide_btn {
     margin: 5em 0 0;
     border-bottom: 3px solid #9cbb1c;
@@ -315,57 +343,68 @@ p {
 }
 
 /**
- * カテゴリー
+ * ABOUT US
  */
-.category_head {
-    margin-top: -80px;
-}
-.category_container ul {
+.about {
     display: flex;
-    justify-content: center;
-    padding: 0;
 }
-.category_container li {
-    width: 9%;
-    list-style: none;
-    cursor: pointer;
-    opacity: 0.6;
+.about {
     position: relative;
-    text-align: center;
 }
-.category_container li:hover {
-    opacity: 1;
+.about_title {
+    font-size: 100px;
+    margin-right: 10px;
 }
-.category_container img {
-    width: 80%;
+.about_font, .second_line, .last_line {
+    font-size: 50px;
+    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
-.category_name {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
+.second_line, .last_line {
+    margin-left: 4em;
 }
-
+.about_detail {
+    margin: 3em 7em 4em 13.5em;
+    font-size: 15px;
+    line-height: 2;
+}
+  
 /**
- * 人気商品
+ *  BEST ITEMS
  */
-.best_items_container {
+.best_items {
     background-color: #F2F2F2;
-    padding: 30px 0;
+    padding: 100px 0;
+    display: flex;
 }
-.best_items_img {
+.best_items .head {
+    margin: auto auto auto 10%;
+}
+.best_items_btn {
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    margin-top: 45px;
+}
+.best_items_btn .arrow {
+    right: 4em;
+}
+.best_items_btn .arrow_bar {
+    width: 2rem;
+}
+.best_items .container {
     display: flex;
     overflow-x: scroll;
-    padding-bottom: 2em;
+}
+.best_items .container::-webkit-scrollbar {
+    display: none;
 }
 .best_items_content {
     position: relative;
     font-size: 10px;
 }
 .best_items_content img {
-    width: 20em;
-    height: 28em;
+    width: 30em;
+    height: 40em;
     padding: 1em 3em;
     cursor: pointer;
 }
@@ -374,200 +413,45 @@ p {
     padding-left: 2em;
     font-size: 1.5rem;
 }
-.sale_price {
-    color: red;
-    font-weight: bold;
-}
 .best_items_content span {
     text-decoration: line-through;
     padding-left: 5px;
     color: #515254;
 }
-.new_item_tag, .sale_item_tag {
+.new_item_tag {
     position: absolute;
     top: 10%;
-    left: 11.5%;
+    left: 30px;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 5px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
 .new_item_tag {
-    background: #45be35;
-}
-.sale_item_tag {
-    background: red;
-}
-.stars i {
-    font-family: "Font Awesome\ 5 Free";
-    font-style: normal;
-    color: #FFD768;
+    background: #65ab31;
 }
 
 /**
- * シーン別
+ * DESIGNER, SHOPS
  */
-.scene_container {
-    position: relative;
-}
-.scene_imgs {
-    font-size: 20px;
+.designer, .shops {
     display: flex;
 }
-.scene_img {
-    width: calc(100%/3);
+.designer .head, .shops .head {
+    margin-left: 10vw;
 }
-.scene_img:last-child {
-    text-align: end;
+.designer .container, .shops .container {
+    padding-left: 10vw;
 }
-.scene_img:nth-child(2) {
-    text-align: center;
-}
-.scene_container img {
-    width: 95%;
-}
-.scene_name {
-    color: white;
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 45%;
-    font-size: 20px;
-}
-.scene_name p {
-    font-size: 2em;
-    font-weight: bold;
-    width: calc(100%/3);
-    text-align: center;
-    text-shadow: 1px 1px 3px #515254;
-}
-.shop_btn {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 60%;
-    font-size: 20px;
-}
-.shop_btn .btn {
-    padding: 0.25em;
-    cursor: pointer;
-    width: calc(100%/3);
-    text-align: center;
-    margin: 0 7em;
-    background-color: white;
-    color: #CCCCCC;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
-    border-radius: 20px;
-}
-.shop_btn .btn:hover {
-    background-color: #515254;
-    transition: all .2s ease;
-    color: white;
+.designer .btn, .shops .btn {
+    margin-left: 0;
 }
 
 /**
- * ディスカウント
+ * GALLERY
  */
-.discount_container {
-    background-color: #F2F2F2;
-    height: 270px;
-    text-align: center;
-    position: relative;
-    margin-top: 2em;
-    margin-top: 130px;
-}
-.img_left {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    left: 0;
-}
-.img_right {
-    position: absolute;
-    width: 15%;
-    bottom: 0;
-    right: 5%;
-}
-.discount_detail {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-}
-.discount_detail p:first-child {
-    font-size: 1em;
-}
-.discount_detail span {
-    color: red;
-}
-.discount_detail p:last-child {
-    font-size: 1.5em;
-}
-.countdown {
-    display: flex;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 10px;
-}
-.time {
-    padding: 0 3em;
-}  
-#day, #hour, #min, #sec {
-    font-size: 5rem;
-}
-.discount_btn {
-    position: absolute;
-    cursor: pointer;
-    border: 1px solid;
-    font-size: 20px;
-    width: 15%;
-    padding: 0.3em;
-    margin: 0 auto;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.discount_btn:hover {
-    transition: all .2s ease;
-    background: #FFD768;
-    color: white;
-    border: 1px solid #FFD768;
-}
-
-/**
- * サービス一覧
- */
-.service_content {
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-}
-.service_box {
-    color: #C0C0C0;
-    border: 2px solid;
-    text-align: center;
-    padding: 0.9em;
-}
-.service_box img {
-    width: 25%;
-    opacity: 0.7;
-    padding-bottom: 0.4em;
-}
-.service_detail {
-    color: #515254;
-}
-.service_box p {
-    font-size: 0.8em;
-}
-
-/**
- * インテリアコーディネート
- */
-.room_container {
+ .room_container {
     position: relative;
     height: 60em;
     margin-top: 130px;
@@ -675,7 +559,179 @@ p {
 }
 
 /**
- * ニュースレター
+ * NEWS
+ */
+.news_inner {
+    display: flex;
+    position: relative;
+}
+.news ul {
+    list-style: none;
+    padding: 0;
+}
+.news li {
+    padding-top: 6em;
+}
+.news_inner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #d9d9d9;
+}
+.news_date, .news_category {
+    width: 12vw;
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin: 0 auto 2em 3em;
+    text-align: left;
+}
+.news .btn {
+    margin-left: 22em;
+    margin-top: 4em;
+}
+
+/**
+ * DISCOUNT
+ */
+.discount_container {
+    background-color: #F2F2F2;
+    height: 270px;
+    text-align: center;
+    position: relative;
+    margin-top: 2em;
+    margin-top: 130px;
+}
+.img_left {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+}
+.img_right {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    right: 5%;
+}
+.discount_detail {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+.discount_detail p:first-child {
+    font-size: 1em;
+}
+.discount_detail span {
+    color: red;
+}
+.discount_detail p:last-child {
+    font-size: 1.5em;
+}
+.countdown {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+.time {
+    padding: 0 3em;
+}  
+#day, #hour, #min, #sec {
+    font-size: 5rem;
+}
+.discount_btn {
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 20px;
+    width: 15%;
+    padding: 0.3em;
+    margin: 0 auto;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.discount_btn:hover {
+    transition: all .2s ease;
+    background: #FFD768;
+    color: white;
+    border: 1px solid #FFD768;
+}
+
+/**
+ * ONLINE STORE
+ */
+.store {
+    display: flex;
+    background-color: #7e807c;
+}
+.store .head {
+    margin: auto 0 auto 10%;
+    color: white;
+}
+.store img {
+    width: 100%;
+}
+.store_sub_title {
+    font-size: 4em;
+    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+    margin: 0.7em 0 0.5em;
+}
+.store_detail {
+    font-size: 1.5em;
+    padding-bottom: 1.7em;
+}
+.store .btn {
+    margin-left: 0;
+}
+.store .arrow {
+    right: 50px;
+}
+.store .arrow_inner {
+    background-color: white;
+}
+.store .arrow_bar {
+    width: 2rem;
+}
+
+/**
+ * OUR SERVICE
+ */
+/* .service_content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.service_box {
+    color: #C0C0C0;
+    border: 2px solid;
+    text-align: center;
+    padding: 0.9em;
+}
+.service_box img {
+    width: 25%;
+    opacity: 0.7;
+    padding-bottom: 0.4em;
+}
+.service_detail {
+    color: #515254;
+}
+.service_box p {
+    font-size: 0.8em;
+} */
+
+/**
+ * NEWS LETTER
  */
 .news_letter {
     font-size: 20px;
