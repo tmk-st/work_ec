@@ -15,6 +15,16 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+a {
+    text-decoration: none;
+    cursor: default;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    cursor: default;
+    color: inherit;
+}
 .wrapper {
     margin: 250px 10%;
 }
@@ -49,6 +59,7 @@ h3 {
     height: 20px;
     right: 0;
     line-height: 0;
+    cursor: pointer;
 }
 .arrow_bar {
     width: 16rem;
@@ -67,6 +78,12 @@ h3 {
 #footer {
     height: 150px;
 }
+ul {
+    list-style: none;
+}
+.ms_font {
+    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+}
 
 /**
  * HEADER
@@ -83,7 +100,7 @@ header {
     position: absolute;
     top: 40px;
     font-family: Quicksand;
-    background: #FFD768;
+    background: #FFD574;
     width: 70px;
     color: white;
     font-weight: bold;
@@ -95,16 +112,19 @@ header {
 }
 header ul {
     display: flex;
-    list-style: none;
     justify-content: center;
 }
 header li {
     margin: 0 2rem;
     text-align: center;
-    cursor: pointer;
 }
-header li:hover {
-    color: #FFD768;
+header li a, .menu a {
+    padding-bottom: 10px;
+}
+header li a:hover, .menu a:hover {
+    color: #FFD574;
+    cursor: pointer;
+    border-bottom: 1px solid;
 }
 .menu {
     position: fixed;
@@ -163,7 +183,6 @@ header li:hover {
 }
 .menu-content ul li {
     border-bottom: solid 1px #f1f2ed;
-    list-style: none;
 }
 .menu-content ul li a {
     display: block;
@@ -220,12 +239,14 @@ h1 {
 }
 .top span {
     font-size: 25px;
-    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
 
 /**
  * 2.ABOUT US
  */
+#about {
+    scroll-margin-top: 150px;
+}
 .about {
     display: flex;
 }
@@ -236,9 +257,8 @@ h1 {
     font-size: 100px;
     margin-right: 10px;
 }
-.about_font, .second_line, .last_line {
+.first_line, .second_line, .last_line {
     font-size: 50px;
-    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
 .second_line, .last_line {
     margin-left: 4em;
@@ -252,6 +272,9 @@ h1 {
 /**
  *  3.BEST ITEMS
  */
+#products {
+    scroll-margin-top: 150px;
+}
 .best_items {
     background-color: #F2F2F2;
     padding: 100px 0;
@@ -292,12 +315,15 @@ h1 {
 .best_items_content p {
     padding-top: 0;
     padding-left: 2em;
-    font-size: 1.5rem;
+    font-size: 16px;
 }
 .best_items_content span {
     text-decoration: line-through;
     padding-left: 5px;
     color: #515254;
+}
+.best_items_content:first-child {
+    margin-left: -2em;
 }
 .new_item_tag {
     position: absolute;
@@ -314,7 +340,7 @@ h1 {
 }
 
 /**
- * 4.DESIGNERs, 5.SHOPS
+ * 4.DESIGNERS, 5.SHOPS
  */
 .designer {
     margin-bottom: -200px;
@@ -335,7 +361,10 @@ h1 {
 /**
  * 6.GALLERY
  */
- .room_container {
+#gallery {
+    scroll-margin-top: 150px;
+}
+.gallery {
     position: relative;
     height: 80em;
     margin-top: 130px;
@@ -347,38 +376,38 @@ h1 {
     height: 100%;
     width: 100%;
 }
-.room_container img {
+.gallery img {
     object-fit: cover;
     width: 50%;
 }
-.room_content {
+.gallery_content {
     width: 50%;
 }
-#page .room_content {
-    background-color: #FFD768;
+#page .gallery_content {
+    background-color: #FFD574;
 }
-#page2 .room_content {
+#page2 .gallery_content {
     background-color: #007394;
 }
-#page3 .room_content {
+#page3 .gallery_content {
     background-color: #948779;
 }
-.room_content p {
+.gallery_content p {
     color: white;
     font-size: 35px;
     font-weight: bold;
     margin: 2em;
     text-align: right;
 }
-#page2 .room_content P {
+#page2 .gallery_content P {
     bottom: 0;
     position: absolute;
     right: 50%;
 }
-#page3 .room_content P {
+#page3 .gallery_content P {
     text-align: left;
 }
-.room_box {
+.gallery_box {
     position: absolute;
     display: flex;
     align-items: flex-end;
@@ -386,17 +415,17 @@ h1 {
     right: 55%;
     font-size: 20px;
 }
-#page2 .room_box {
+#page2 .gallery_box {
     top: 15%;
 }
-.detail_outer {
+.gallery_box_inner {
     background-color: white;
     height: 7em;
     width: 13em;
     padding: 1em;
     font-size: 1em;
 } 
-.detail_head {
+.gallery_box span {
     font-size: 1.5em;
 }
 .detail {
@@ -418,7 +447,7 @@ h1 {
     font-weight: bold;
 }
 #page .room_btn:hover {
-    color: #FFD768;
+    color: #FFD574;
 }
 #page2 .room_btn:hover {
     color: #007394;
@@ -445,12 +474,18 @@ h1 {
 /**
  * 7.NEWS
  */
+#news {
+    scroll-margin-top: 150px;
+}
 .news_inner {
     display: flex;
     position: relative;
 }
+.news_head {
+    width: 18vw;
+    display: flex;
+}
 .news ul {
-    list-style: none;
     padding: 0;
 }
 .news li {
@@ -465,14 +500,17 @@ h1 {
     left: 0;
     background-color: #d9d9d9;
 }
-.news_date, .news_category {
+time, .news_category {
     width: 12vw;
     font-size: 2em;
+}
+.news_category {
+    text-align: right;
 }
 h4 {
     font-size: 1.7em;
     font-weight: lighter;
-    margin: 0 auto 2em 3em;
+    margin: 0 auto 2em 8em;
     text-align: left;
 }
 .news .btn {
@@ -483,7 +521,7 @@ h4 {
 /**
  * 8.DISCOUNT
  */
-.discount_container {
+.discount {
     background-color: #F2F2F2;
     height: 500px;
     text-align: center;
@@ -516,7 +554,6 @@ h4 {
 .discount_head h2 {
     width: 100vw;
     font-size: 45px;
-    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
     margin-bottom: 15px;
     font-weight: lighter;
 }
@@ -529,11 +566,11 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 10px;
+    font-size: 16px;
     color: #7e807c;
 }
 .time {
-    padding: 0 3em;
+    padding: 0 2em;
 }  
 #day, #hour, #min, #sec {
     font-size: 5rem;
@@ -555,7 +592,10 @@ h4 {
 /**
  * 9.OUR SERVICE
  */
- .service {
+#service {
+    scroll-margin-top: 150px;
+}
+.service {
     display: flex;
 }
 .service_content {
@@ -571,7 +611,6 @@ h4 {
 }
 .service span {
     font-size: 40px;
-    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
 .service .btn {
     margin-left: 0;
@@ -581,6 +620,9 @@ h4 {
 /**
  * 10.ONLINE STORE
  */
+#store {
+    scroll-margin-top: 150px;
+}
 .store {
     display: flex;
     background-color: #7e807c;
@@ -594,7 +636,6 @@ h4 {
 }
 .store_sub_title {
     font-size: 4em;
-    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
     margin: 0.7em 0 0.5em;
 }
 .store_detail {
@@ -635,11 +676,10 @@ input::placeholder {
 }
 .news_letter p {
     font-size: 16px;
-    margin-right: 265px;
+    margin-right: 270px;
     margin-bottom: 30px;
 }
 .news_letter input {
-    height: 1.5em;
     width: 50%;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -648,14 +688,47 @@ input::placeholder {
     border-block-start: none;
     border-right: none;
     border-left-width: thin;
+    font-size: 16px;
+}
+.news_letter input:focus {
+    outline: none;
 }
 .news_letter button {
     padding: 0.7em 1.5em;
-    margin-left: 0.5em;
-    background-color: #FFD768;
+    background-color: #FFD574;
     border: none;
     color: white;
-    font-size: 0.75em;
     cursor: pointer;
     font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 16px;
+}
+
+/**
+ * FOOTER
+ */
+footer nav {
+    color: white;
+    background: #7e807c;
+    height: 30em;
+    font-size: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer li a {
+    margin: 0 1em;
+    padding-bottom: 10px;
+}
+footer li a:hover {
+    color: #FFD574;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
