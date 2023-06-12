@@ -9,70 +9,56 @@
         <script src="https://kit.fontawesome.com/376c75aa1e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <iframe src="header.html" frameborder="0" width="100%" style="z-index: 99;"></iframe>
-
-        <div class="hamburger_outer">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <div class="menu-content">
-                <div class="search_btn"><i class="fas fa-search fa-fw"></i></div>
+        <header>
+            <div class="top_logo">H</div>
+            <nav>
                 <ul>
-                    <li>
-                        <a href="#">my page</a>
-                    </li>
-                    <li>
-                        <a href="#">categories</a>
-                    </li>
-                    <li>
-                        <a href="#">news</a>
-                    </li>
-                    <li>
-                        <a href="#">contact us</a>
-                    </li>
+                    <li>about</li>
+                    <li>products</li>
+                    <li>gallery</li>
+                    <li>news</li>
+                    <li>service</li>
                 </ul>
+            </nav>
+            <div class="menu">
+                <span>shop</span>
             </div>
-        </div>
+            <div class="hamburger">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <div class="search_btn"><i class="fas fa-search fa-fw"></i></div>
+                    <ul>
+                        <li>
+                            <a href="#">my page</a>
+                        </li>
+                        <li>
+                            <a href="#">categories</a>
+                        </li>
+                        <li>
+                            <a href="#">news</a>
+                        </li>
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
         <!-- 1.TOP -->
-        <div class="top_logo">H</div>
-        <div class="top_container">
-            <div class="slide">
-                <div class="slide_img"><img src="../img/top.jpg"></div>
-                <div class="slide_caption top">
-                    <p class="title">homie</p>
-                    <p class="heading">homie <span>creates "new standard"<br>to enrich your everyday life.</span></p>
-                </div>
+        <section class="top">
+            <div class="top_img">
+                <img src="../img/top.jpg">
             </div>
-            <div class="slide">
-                <div class="slide_img"><img src="../img/newarrival.jpg"></div>
-                <div class="slide_caption newarrival">
-                    <p class="title">a brand</p>
-                    <p class="heading">new arrivals</p>
-                    <div class="slide_btn">shop now</div>
-                </div>
+            <div class="top_title">
+                <h1>homie</h1>
+                <p>HOMIE <span>creates "new standard"<br>to enrich your everyday life.</span></p>
             </div>
-            <div class="slide">
-                <div class="slide_img">
-                    <img src="../img/kitchen2.jpg">
-                </div>
-                <div class="slide_caption kitchen_items">
-                    <p class="title">shop and fun</p>
-                    <p class="heading">aaaa</p>
-                    <div class="slide_btn">shop now</div>
-                </div>
-            </div>
-            <div class="slide slide4">
-                <div class="slide_img"><img src="../img/plant_room.jpg"></div>
-                <div class="slide_caption green_items">
-                    <p>big sale products</p>
-                    <p class="title">plants for interior</p>
-                    <div class="slide_btn">shop now</div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- 2.ABOUT US -->
-        <div class="wrapper about">
+        <section class="wrapper about">
             <div>
                 <h2>ABOUT US</h2>
             </div>
@@ -101,10 +87,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 3.BEST ITEMS -->
-        <div class="best_items">
+        <section class="best_items">
             <div class="head">
                 <h2>BEST ITEMS</h2>
                 <div class="best_items_btn">
@@ -153,10 +139,10 @@
                     <p>lamp</p><p>¥6,990</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 4.DESIGNERS -->
-        <div class="wrapper designer">
+        <section class="wrapper designer">
             <div class="head">
                 <h2>DESIGNERS</h2>
             </div>
@@ -172,15 +158,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 5.SHOPS -->
-        <div class="wrapper shops">
+        <section class="wrapper shops">
             <div class="head">
                 <h2>SHOPS</h2>
             </div>
             <div class="container">
-                <h3>About Designers</h3>
+                <h3>Find Shops</h3>
                     <div class="btn">
                     <p>HOMIEの取扱店舗について</p>
                     <div class="arrow">
@@ -191,10 +177,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 6.GALLERY -->
-        <div class="wrapper room_container">
+        <section class="wrapper room_container">
             <div id="toggleButton"><i class="fa-solid fa-chevron-right"></i></div>
             <div id="page">
                 <div class="room_content">
@@ -235,31 +221,31 @@
                 </div>
                 <img src="../img/design3.jpg">
             </div>
-        </div>
+        </section>
 
         <!-- 7.NEWS -->
-        <div class="wrapper news">
+        <section class="wrapper news">
             <div>
                 <h2>NEWS</h2>
             </div>
             <ul>
                 <li>
                     <div class="news_inner">
-                        <div class="news_date">2023.06.01</div>
+                        <time class="news_date" datetime="2023-06-01">2023.06.01</time>
                         <div class="news_category">news</div>
                         <h4>HOMIEホームページをリニューアルしました。</h4>
                     </div>
                 </li>
                 <li>
                     <div class="news_inner">
-                        <div class="news_date">2023.05.21</div>
+                        <time class="news_date" datetime="2023-05-21">2023.05.21</time>
                         <div class="news_category">news</div>
                         <h4>雑誌「GINZA」にてHOMIEが紹介されました。</h4>
                     </div>
                 </li>
                 <li>
                     <div class="news_inner">
-                        <div class="news_date">2023.05.01</div>
+                        <time class="news_date" datetime="2023-05-01">2023.05.01</time>
                         <div class="news_category">news</div>
                         <h4>今月の新商品が入荷しました。</h4>
                     </div>
@@ -274,10 +260,10 @@
                     <div class="arrow_head">＞</div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 8.DISCOUNT -->
-        <div class="wrapper discount_container">
+        <section class="wrapper discount_container">
             <div>
                 <img src="../img/plant.PNG" alt="ディスカウント商品イメージ画像" class="img_left">
                 <img src="../img/chair_2.PNG" alt="ディスカウント商品イメージ画像" class="img_right">
@@ -301,10 +287,10 @@
                     <div class="arrow_head">＞</div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 9.OUR SERVICE -->
-        <div class="wrapper service">
+        <section class="wrapper service">
             <div class="head">
                 <h2>OUR SERVICE</h2>
             </div>
@@ -346,10 +332,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 10.ONLINE STORE -->
-        <div class="store">
+        <section class="store">
             <div class="head">
                 <h2>ONLINE STORE</h2>
                 <div class="store_sub_title">Click here<br>to Buy</div>
@@ -367,14 +353,21 @@
             <div class="container">
                 <img src="../img/shop.jpg">
             </div>
-        </div>
+        </section>
         
         <!-- 11.NEWS LETTERー -->
-        <div class="wrapper news_letter">
-            <p>join our news letter</p>
-            <input type="text" placeholder="enter your email">
-            <button>join</button>
-        </div>
+        <section class="wrapper news_letter">
+            <div>
+                <h2>NEWS LETTER</h2>
+            </div>
+            <div class="container">
+                <p>ニュースレターの登録はこちらから</p>
+                <label>
+                    <input type="text" placeholder="enter your email">
+                    <button>join</button>
+                </label>
+            </div>
+        </section>
 
         <script src="../js/script.js"></script>
     </body>

@@ -21,41 +21,7 @@
     /**
     * 1.TOP
     */
-    .top_logo {
-        width: 40px;
-        height: 40px;
-        font-size: 25px;
-        top: 20px;
-    }
-    .top_container {
-        font-size: 10px;
-        top: -100px;
-    }
-    .slide_img {
-        height: 200px;
-    }
-    .top {
-        top: 7%;
-        right: 15%;
-    }
-    .top .heading {
-        line-height: 1;
-    }
-    .newarrival {
-        top: 25%;
-    }
-    .green_items {
-        top: 15%;
-    }
-    .numbertext {
-        font-size: 10px;
-        top: 10px;
-        right: 10px;
-    }
-    .dot {
-        height: 5px;
-        width: 5px;
-    }
+
 
     /**
     * 3.BEST ITEMS

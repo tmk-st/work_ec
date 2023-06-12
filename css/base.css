@@ -12,8 +12,11 @@ body {
     margin: 0;
     color: #515254;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 .wrapper {
-    margin: 100px 10%;
+    margin: 250px 10%;
 }
 p {
     margin: 0;
@@ -28,6 +31,9 @@ h3 {
     font-weight: 100;
     font-size: 45px;
     margin: 0;
+}
+.container {
+    width: calc(100% - 18vw);
 }
 .btn {
     display: flex;
@@ -63,19 +69,57 @@ h3 {
 }
 
 /**
- * ハンバーガーメニュー
+ * HEADER
  */
-.hamburger_outer {
-    display: none;
+header {
+    font-size: 20px;
+    line-height: 3;
+    position: fixed;
+    z-index: 99;
+    background-color: #f8f8f8;
+    width: 100%;
 }
+.top_logo {
+    position: absolute;
+    top: 40px;
+    font-family: Quicksand;
+    background: #FFD768;
+    width: 70px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1.5;
+    margin-left: 50px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+header li {
+    margin: 0 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+header li:hover {
+    color: #FFD768;
+}
+.menu {
+    position: fixed;
+    right: 100px;
+    top: 20px;
+}
+/**
+ * HAMBURGER MENU
+ */
 .menu-btn {
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 50px;
+    right: 80px;
     display: flex;
     height: 30px;
-    justify-content: center;
-    align-items: center;
     z-index: 90;
 }
 .menu-btn span,
@@ -110,7 +154,7 @@ h3 {
     display: none;
 }
 .search_btn {
-    color: white;
+    color: #f1f2ed;
     font-size: 20px;
     padding: 15px;
 }
@@ -118,224 +162,65 @@ h3 {
     padding: 50px 10px 0;
 }
 .menu-content ul li {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #f1f2ed;
     list-style: none;
 }
 .menu-content ul li a {
     display: block;
     font-size: 15px;
-    color:#ffffff;
+    color: #f1f2ed;
     text-decoration: none;
     padding: 9px 15px 10px 0;
 }
 .menu-content {
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 100%;
     z-index: 80;
-    background-color: #515254;
-    opacity: 0.9;
+    background-color: #888884;
     transition: all 0.5s;
 }
 #menu-btn-check:checked ~ .menu-content {
-    left: 50%;
+    left: 0;
 }
 
 /**
  * 1.TOP
  */
-.top_logo {
-    position: absolute;
-    top: 40px;
-    font-family: Quicksand;
-    background: #FFD768;
-    width: 70px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-    cursor: pointer;
-    z-index: 1;
-}
-.top_container {
-    width: 100%;
-    position: relative;
-    top: -70px;
-    display: flex;
-    overflow: hidden;
-    font-size: 20px;
-}  
-.slide {
-    width: 100%;
-    flex-shrink: 0;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: all 0.6s ease-in-out;
-}  
-.slide_img {
-    width: 100%;
-    height: 600px;
-}  
-.slide_img img {
-    width:100%;
-    object-fit: cover;
-    height: 100%;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 20px;
-    margin-top: -30px;
-    color: white;
-    font-size: 1em;
-    transition: all 0.2s ease;
-    text-shadow: 1px 1px 2px #515254;
-}  
-.next {
-    right: 0;
-}  
-.prev:hover, .next:hover {
-    color: #FFD768;
-    transition: all 0.2s ease;
-}  
-.slide_caption {
-    position: absolute;
-}
 .top {
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+}
+.top_img {
+    margin: 0 50px;
+}  
+.top_img img {
+    width: 100%;
+}
+.top_title {
+    position: absolute;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: right;
 }
-.top .title {
-    font-size:  20em;
+h1 {
+    font-size: 20em;
     color: white;
     height: 400px;
+    margin: 0;
+    font-weight: 500;
 }
-.top .heading {
+.top p {
     color: white;
-    font-size: 2em;
+    font-size: 30px;
 }
-.top .heading span {
-    font-size: 0.5em;
+.top span {
+    font-size: 25px;
     font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
-}
-.br_sp {
-    display: none;
-}
-.newarrival {
-    top: 30%;
-    left: 15%;
-}
-.newarrival .title {
-    font-size: 2em;
-    font-weight: lighter;
-    line-height: 0;
-}
-.newarrival .heading {
-    font-size: 3em;
-    font-weight: 1000;
-}
-.newarrival .slide_btn {
-    color: white;
-    background: #515254;
-    margin-top: 1em;
-}
-.newarrival .slide_btn:hover {
-    color: #515254;
-    background: white;
-    font-weight: bold;
-    transition: all.2s ease;
-}
-.slide_btn {
-    padding: 0.25em 0.5em;
-    font-size: 1em;
-    width: 30%;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-}
-.kitchen_items {
-    color: white;
-    top: 20%;
-    right: 15%;
-    text-align: right;
-}
-.kitchen_items .title {
-    font-size: 3em;
-    font-weight: bold;
-}
-.kitchen_items .heading {
-    color: #515254;
-    text-shadow: 1px 1px 2px white;
-}
-.kitchen_items .slide_btn {
-    border: 2px solid #FFD768;
-    margin: 0.5em 0 0 auto;
-}
-.kitchen_items .slide_btn:hover {
-    background-color: #FFD768;
-    transition: all .2s ease;
-}
-.slide4 {
-    background: #F2F2F2;
-}
-.slide4 .slide_img {
-    width: 60%;
-    margin: 0 0 0 auto;
-}
-.green_items {
-    top: 25%;
-    left: 10%;
-}
-.green_items p:first-child {
-    font-size: 1em;
-    color: #9cbb1c;
-}
-.green_items .title {
-    font-size: 3em;
-    font-weight: bold;
-}
-.green_items .slide_btn {
-    margin: 5em 0 0;
-    border-bottom: 3px solid #9cbb1c;
-    padding-bottom: 0.25em;
-    width: 20%;
-}
-.green_items .slide_btn:hover {
-    color: white;
-    text-shadow: 1px 1px 3px #515254;
-    transition: all .2s ease;
-}
-.numbertext {
-    font-size: 20px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-.dots {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 10px 4px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: all 0.2s ease;
-}
-.dot:hover {
-    background-color: #FFD768;
 }
 
 /**
@@ -431,6 +316,9 @@ h3 {
 /**
  * 4.DESIGNERs, 5.SHOPS
  */
+.designer {
+    margin-bottom: -200px;
+}
 .designer, .shops {
     display: flex;
 }
@@ -449,7 +337,7 @@ h3 {
  */
  .room_container {
     position: relative;
-    height: 60em;
+    height: 80em;
     margin-top: 130px;
 }
 #page, #page2, #page3 {
@@ -597,7 +485,7 @@ h4 {
  */
 .discount_container {
     background-color: #F2F2F2;
-    height: 400px;
+    height: 500px;
     text-align: center;
     position: relative;
     margin-top: 2em;
@@ -730,21 +618,36 @@ h4 {
  * 11.NEWS LETTER
  */
 .news_letter {
+    display: flex;
     font-size: 20px;
-    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.news_letter .container {
+    text-align: end;
 }
 input::placeholder {
-    color: #dcdcdc;
-    font-size: 0.75em;
+    color: #d9d9d9;
 }
-.news_letter_heading {
-    font-size: 0.7em;
+.news_letter label {
+    padding-bottom: 1.5em;
+    border-bottom: solid 1px #d9d9d9;
+}
+.news_letter p {
+    font-size: 16px;
+    margin-right: 265px;
+    margin-bottom: 30px;
 }
 .news_letter input {
-    height: 3em;
+    height: 1.5em;
     width: 50%;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: transparent;
+    border-block-end: none;
+    border-block-start: none;
+    border-right: none;
+    border-left-width: thin;
 }
 .news_letter button {
     padding: 0.7em 1.5em;
