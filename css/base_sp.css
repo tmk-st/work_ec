@@ -19,7 +19,7 @@
     }
 
     /**
-    * トップ画面
+    * 1.TOP
     */
     .top_logo {
         width: 40px;
@@ -58,7 +58,7 @@
     }
 
     /**
-    * 人気商品
+    * 3.BEST ITEMS
     */
     .best_items_container {
         padding: 10px 0;
@@ -74,52 +74,7 @@
     }
 
     /**
-    * ディスカウント
-    */
-    .discount_container {
-        height: 100px;
-        margin-top: 50px;
-    }
-    .img_left {
-        width: 30%;
-    }
-    .img_right {
-        width: 20%;
-    }
-    .discount_detail, .discount_btn {
-        font-size: 5px;
-    }
-    .countdown {
-        top: 30%;
-        font-size: 5px;
-    }
-    .time {
-        line-height: 1;
-        padding: 0 1.5em;
-    }
-    #day, #hour, #min, #sec {
-        font-size: 3rem;
-    }
-
-    /**
-    * サービス
-    */
-    .service_container {
-        font-size: 13px;
-    }
-    .service_box {
-        padding: 0.3em;
-        margin: 0.3em;
-    }
-    .service_box p {
-        font-size: 0.4em;
-    }
-    .service_box img {
-        width: 40%;
-    }
-
-    /**
-    * インテリアコーディネート
+    * 6.GALLERY
     */
     .room_container {
         height: 160px;
@@ -149,7 +104,7 @@
     }
 
     /**
-    * ニュースレター
+    * 7.NEWS
     */
     .news_letter {
         font-size: 8px;
@@ -160,5 +115,32 @@
     }
     .news_letter button {
         padding: 0 1em;
+    }
+    /**
+    * 8.DISCOUNT
+    */
+    .discount_container {
+        height: 100px;
+        margin-top: 50px;
+    }
+    .img_left {
+        width: 30%;
+    }
+    .img_right {
+        width: 20%;
+    }
+    .discount_detail, .discount_btn {
+        font-size: 5px;
+    }
+    .countdown {
+        top: 30%;
+        font-size: 5px;
+    }
+    .time {
+        line-height: 1;
+        padding: 0 1.5em;
+    }
+    #day, #hour, #min, #sec {
+        font-size: 3rem;
     }
 }

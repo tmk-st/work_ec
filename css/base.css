@@ -29,10 +29,6 @@ h3 {
     font-size: 45px;
     margin: 0;
 }
-.container {
-    width: calc(100% - 18vw);
-    font-size: 30px;
-}
 .btn {
     display: flex;
     margin-left: 11em;
@@ -148,7 +144,7 @@ h3 {
 }
 
 /**
- * トップ
+ * 1.TOP
  */
 .top_logo {
     position: absolute;
@@ -343,7 +339,7 @@ h3 {
 }
 
 /**
- * ABOUT US
+ * 2.ABOUT US
  */
 .about {
     display: flex;
@@ -369,7 +365,7 @@ h3 {
 }
   
 /**
- *  BEST ITEMS
+ *  3.BEST ITEMS
  */
 .best_items {
     background-color: #F2F2F2;
@@ -433,7 +429,7 @@ h3 {
 }
 
 /**
- * DESIGNER, SHOPS
+ * 4.DESIGNERs, 5.SHOPS
  */
 .designer, .shops {
     display: flex;
@@ -449,7 +445,7 @@ h3 {
 }
 
 /**
- * GALLERY
+ * 6.GALLERY
  */
  .room_container {
     position: relative;
@@ -559,7 +555,7 @@ h3 {
 }
 
 /**
- * NEWS
+ * 7.NEWS
  */
 .news_inner {
     display: flex;
@@ -597,7 +593,7 @@ h4 {
 }
 
 /**
- * DISCOUNT
+ * 8.DISCOUNT
  */
 .discount_container {
     background-color: #F2F2F2;
@@ -617,7 +613,7 @@ h4 {
     position: absolute;
     width: 25%;
     bottom: 0;
-    right: 5%;
+    right: 1%;
 }
 .discount_head {
     position: absolute;
@@ -626,22 +622,23 @@ h4 {
     transform: translateX(-50%);
 }
 .discount_head span {
-    color: red;
+    font-size: 50px;
+    color: #CC0000;
 }
 .discount_head h2 {
-    width: 100%;
-    font-size: 3.5em;
+    width: 100vw;
+    font-size: 45px;
     font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
     margin-bottom: 15px;
     font-weight: lighter;
 }
 .discount_detail {
-    font-size: 1.5em;
+    font-size: 18px;
 }
 .countdown {
     display: flex;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 10px;
@@ -668,7 +665,33 @@ h4 {
 }
 
 /**
- * ONLINE STORE
+ * 9.OUR SERVICE
+ */
+ .service {
+    display: flex;
+}
+.service_content {
+    width: 40vw;
+}
+.service_content:nth-child(2) {
+    margin-left: 10vw;
+    margin-top: 50px;
+}
+.service_content:last-child {
+    margin-left: 20vw;
+    margin-top: 50px;
+}
+.service span {
+    font-size: 40px;
+    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+}
+.service .btn {
+    margin-left: 0;
+    margin-top: 1em;
+}
+
+/**
+ * 10.ONLINE STORE
  */
 .store {
     display: flex;
@@ -704,37 +727,7 @@ h4 {
 }
 
 /**
- * OUR SERVICE
- */
-.service {
-    display: flex;
-}
-
-/* .service_content {
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-}
-.service_box {
-    color: #C0C0C0;
-    border: 2px solid;
-    text-align: center;
-    padding: 0.9em;
-}
-.service_box img {
-    width: 25%;
-    opacity: 0.7;
-    padding-bottom: 0.4em;
-}
-.service_detail {
-    color: #515254;
-}
-.service_box p {
-    font-size: 0.8em;
-} */
-
-/**
- * NEWS LETTER
+ * 11.NEWS LETTER
  */
 .news_letter {
     font-size: 20px;
