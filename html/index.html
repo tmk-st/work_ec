@@ -12,7 +12,7 @@
         <header>
             <div class="top_logo">H</div>
             <nav>
-                <ul>
+                <ul class="header_list">
                     <li><a href="#about">about</a></li>
                     <li><a href="#products">products</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -20,34 +20,45 @@
                     <li><a href="#service">service</a></li>
                 </ul>
             </nav>
-            <div class="menu">
+            <div class="store_btn">
                 <span><a href="#store">shop</a></span>
             </div>
             <div class="hamburger">
                 <input type="checkbox" id="menu-btn-check">
-                <label for="menu-btn-check" class="menu-btn"><span></span></label>
-                <div class="menu-content">
-                    <div class="search_btn"><i class="fas fa-search fa-fw"></i></div>
-                    <ul>
-                        <li>
-                            <a href="#">my page</a>
-                        </li>
-                        <li>
-                            <a href="#">categories</a>
-                        </li>
-                        <li>
-                            <a href="#">news</a>
-                        </li>
-                        <li>
-                            <a href="#">contact us</a>
-                        </li>
-                    </ul>
+                <label for="menu-btn-check" class="menu_btn"><span></span></label>
+                <div class="menu_content">
+                    <div class="menu_head">
+                        <p><a href="#top">HOMIE</a></p>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_body">
+                            <ul>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#products">products</a></li>
+                                <li><a href="#gallery">gallery</a></li>
+                                <li><a href="#news">news</a></li>
+                                <li><a href="#service">service</a></li>
+                            </ul>
+                            <p>
+                                online store
+                            </p>
+                        </div>
+                        <div class="menu_bottom">
+                            <ul>
+                                <li>catalog</li>
+                                <li>download</li>
+                                <li>company</li>
+                                <li>privacy policy</li>
+                                <li>cookie policy</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- 1.TOP -->
-        <section class="top">
+        <section class="top" id="top">
             <div class="top_img">
                 <img src="../img/top.jpg">
             </div>
@@ -382,16 +393,45 @@
         </section>
 
         <footer>
-            <nav>
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#products">products</a></li>
-                    <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#news">news</a></li>
-                    <li><a href="#service">service</a></li>
-                </ul>
-            </nav>
-            <div class="copyright">Copyright ©︎ 2023, Homie. All Rights Reserved.</div>
+            <div class="footer_head">
+                <p><a href="#top">HOMIE</a></p>
+            </div>
+            <div class="footer_right">
+                <div class="footer_body">
+                    <ul>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#products">products</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#news">news</a></li>
+                        <li><a href="#service">service</a></li>
+                    </ul>
+                    <div class="footer_address">
+                        <dl>
+                            <dt>株式会社</dt>
+                            <dd>
+                                <address class="ms_font">
+                                    <div>〒123-4567</div>
+                                    <div>東京都</div>
+                                    <div>TEL 0120-123-4567</div>
+                                </address>
+                            </dd>
+                            <dd>
+                                CONTACT US
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <ul>
+                        <li>catalog</li>
+                        <li>download</li>
+                        <li>company</li>
+                        <li>privacy policy</li>
+                        <li>cookie policy</li>
+                    </ul>
+                    <div class="copyright">Copyright ©︎ 2023, Homie. All Rights Reserved.</div>
+                </div>
+            </div>
         </footer>
 
         <script src="../js/script.js"></script>
