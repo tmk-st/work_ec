@@ -47,7 +47,7 @@ h3 {
 }
 .btn {
     display: flex;
-    margin-left: 11em;
+    /* margin-left: 11em; */
     margin-top: 1.5em;
     font-size: 18px;
     position: relative;
@@ -58,6 +58,7 @@ h3 {
     align-items: center;
     height: 20px;
     right: 0;
+    top: 0;
     line-height: 0;
     cursor: pointer;
 }
@@ -80,6 +81,7 @@ h3 {
 }
 ul {
     list-style: none;
+    padding: 0;
 }
 .ms_font {
     font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
@@ -103,19 +105,19 @@ header {
     top: -100%;
     transition: top 0.8s ease-in-out;
 }
-.top_logo {
+.logo {
     position: absolute;
-    top: 40px;
+    top: 1.5em;
     font-family: Quicksand;
     background: #FFD574;
-    width: 70px;
+    width: 1.5em;
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
     cursor: pointer;
     line-height: 1.5;
-    margin-left: 50px;
+    margin-left: 1em;
 }
 .header_list {
     display: flex;
@@ -134,16 +136,16 @@ header {
 }
 .store_btn {
     position: absolute;
-    right: 10%;
-    top: 20px;
+    right: 5em;
+    top: 1em;
 }
 /**
  * HAMBURGER MENU
  */
 .menu_btn {
     position: absolute;
-    top: 30px;
-    right: 50px;
+    top: 1.5em;
+    right: 2em;
     height: 30px;
     width: 30px;
     z-index: 90;
@@ -244,11 +246,11 @@ header {
 }
 .top {
     position: relative;
-    top: 80px;
+    top: 3em;
     font-size: 20px;
 }
 .top_img {
-    margin: 0 50px;
+    margin: 0 2em;
 }  
 .top_img img {
     width: 100%;
@@ -263,7 +265,6 @@ header {
 h1 {
     font-size: 20em;
     color: white;
-    height: 400px;
     margin: 0;
     font-weight: 500;
 }
@@ -272,7 +273,7 @@ h1 {
     font-size: 30px;
 }
 .top span {
-    font-size: 25px;
+    font-size: 0.9em;
 }
 
 /**
@@ -283,8 +284,6 @@ h1 {
 }
 .about {
     display: flex;
-}
-.about {
     position: relative;
 }
 .about_title {
@@ -299,7 +298,7 @@ h1 {
 }
 .about_detail {
     margin: 3em 7em 4em 13.5em;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2;
 }
   
@@ -317,11 +316,11 @@ h1 {
 .best_items .head {
     margin: auto auto auto 10%;
 }
-.best_items_btn {
+.best_items_btn, .best_items_btn_sp {
     display: flex;
     font-size: 18px;
     position: relative;
-    margin-top: 45px;
+    margin-top: 2em;
 }
 .best_items_btn .arrow {
     right: 4em;
@@ -367,6 +366,9 @@ h1 {
 .new_item_tag {
     background: #65ab31;
 }
+.best_items_btn_sp {
+    display: none;
+}
 
 /**
  * 4.DESIGNERS, 5.SHOPS
@@ -377,11 +379,9 @@ h1 {
 .designer, .shops {
     display: flex;
 }
-.designer .head, .shops .head {
-    margin-left: 10vw;
-}
+.designer .head, .shops .head,
 .designer .container, .shops .container {
-    padding-left: 10vw;
+    margin-left: 10vw;
 }
 .designer .btn, .shops .btn {
     margin-left: 0;
@@ -512,6 +512,7 @@ h1 {
 .news_head {
     width: 18vw;
     display: flex;
+    font-size: 18px;
 }
 .news ul {
     padding: 0;
@@ -528,18 +529,18 @@ h1 {
     left: 0;
     background-color: #d9d9d9;
 }
-time, .news_category {
-    width: 12vw;
-    font-size: 2em;
-}
 .news_category {
-    text-align: right;
+    padding-left: 6em;
 }
 h4 {
-    font-size: 1.7em;
+    font-size: 18px;
     font-weight: lighter;
     margin: 0 auto 2em 8em;
     text-align: left;
+}
+h4 i {
+    font-size: 14px;
+    cursor: pointer;
 }
 .news .btn {
     margin-left: 22em;
@@ -582,6 +583,9 @@ h4 {
     font-size: 45px;
     margin-bottom: 15px;
     font-weight: lighter;
+}
+.br_sp {
+    display: none;
 }
 .discount_detail {
     font-size: 18px;
@@ -640,7 +644,6 @@ h4 {
 }
 .service .btn {
     margin-left: 0;
-    margin-top: 1em;
 }
 
 /**
@@ -651,7 +654,7 @@ h4 {
 }
 .store {
     display: flex;
-    background-color: #7e807c;
+    background-color: #888884;
 }
 .store .head {
     margin: auto 0 auto 10%;
@@ -738,7 +741,7 @@ footer, .footer_body, .footer_bottom ul {
 footer {
     position: relative;
     color: white;
-    background: #7e807c;
+    background: #888884;
     padding: 7vw 10%;
 }
 footer ul {
@@ -748,9 +751,6 @@ footer ul {
     width: 18vw;
     font-size: 30px;
     line-height: 2;
-}
-.footer_right {
-    width: calc(100% - 18vw);
 }
 .footer_body ul {
     font-size: 30px;
