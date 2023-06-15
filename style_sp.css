@@ -22,12 +22,14 @@
         width: 100%;
     }
     .btn {
-        margin-left: 1.5em;
         margin-top: 0.5em;
         font-size: 14px;
     }
     .arrow_bar {
         width: 10rem;
+    }
+    .arrow_head {
+        font-size: 11px;
     }
 
     /**
@@ -54,6 +56,9 @@
     .top_img {
         margin: 0;
     }
+    .top_title {
+        left: 50%;
+    }
     h1 {
         font-size: 7em;
     }
@@ -74,6 +79,9 @@
     .about_title {
         font-size: 45px;
     }
+    .first_line {
+        margin-top: 0;
+    }
     .first_line, .second_line, .last_line {
         font-size: 23px;
     }
@@ -82,6 +90,11 @@
     }
     .about_detail {
         margin: 2em 0 0 2em;
+        font-size: 14px;
+    }
+    .about .btn {
+        margin-left: 2em;
+        margin-top: 2em;
     }
 
     /**
@@ -120,6 +133,9 @@
     .designer .container, .shops .container {
         margin-left: 0;
     }
+    .designer .container, .shops .container {
+        margin-top: 0;
+    }
     .designer, .shops {
         display: block;
     }
@@ -130,7 +146,14 @@
     /**
     * 6.GALLERY
     */
-
+    .gallery {
+        margin: 90px 0;
+    }
+    .gallery_bg img {
+        width: 125%;
+        height: 80vw;
+        object-fit: cover;
+    }
 
     /**
     * 7.NEWS
@@ -202,6 +225,7 @@
     }
     .service_content {
         width: 58vw;
+        margin-top: 0;
     }
     .service_content:nth-child(2), .service_content:last-child {
         margin-top: 25px;

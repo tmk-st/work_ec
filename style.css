@@ -5,12 +5,13 @@
  */
 html {
     font-size: 62.5%;
-    background-color: #f8f8f8;;
+    background-color: #fdf9f2;
+    /* background-color: #f1f2ed; */
 }
 body {
     font-family: 'Alegreya Sans SC', sans-serif;
     margin: 0;
-    color: #515254;
+    color: #59514c;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -47,8 +48,8 @@ h3 {
 }
 .btn {
     display: flex;
-    /* margin-left: 11em; */
     margin-top: 1.5em;
+    margin-left: 0;
     font-size: 18px;
     position: relative;
 }
@@ -59,8 +60,10 @@ h3 {
     height: 20px;
     right: 0;
     top: 0;
-    line-height: 0;
     cursor: pointer;
+
+    flex-direction: column;
+    justify-content: center;
 }
 .arrow_bar {
     width: 16rem;
@@ -68,13 +71,13 @@ h3 {
 }
 .arrow_inner {
     height: 100%;
-    background-color: #515254;
+    /* background-color: #515254; */
+    background-color: #484036;
 }
 .arrow_head {
     position: absolute;
-    top: 55%;
     right: -3px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #footer {
     height: 150px;
@@ -86,6 +89,9 @@ ul {
 .ms_font {
     font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
 }
+.jp_font {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
 
 /**
  * HEADER
@@ -95,7 +101,8 @@ header {
     line-height: 3;
     position: fixed;
     z-index: 99;
-    background-color: #f8f8f8;
+    background-color: #fdf9f2;
+    /* background-color: #f1f2ed; */
     width: 100%;
     top: 0;
     transition: top 0.8s ease-in-out;
@@ -109,7 +116,7 @@ header {
     position: absolute;
     top: 1.5em;
     font-family: Quicksand;
-    background: #FFD574;
+    background: #F2C762;
     width: 1.5em;
     color: white;
     font-weight: bold;
@@ -131,7 +138,7 @@ header {
     padding-bottom: 10px;
 }
 .header_list li a:hover, .menu a:hover {
-    color: #FFD574;
+    color: #F2C762;
     border-bottom: 1px solid;
 }
 .store_btn {
@@ -158,7 +165,7 @@ header {
     content: '';
     height: 2px;
     width: 30px;
-    background-color: #515254;
+    background-color: #484036;
     position: absolute;
 }
 .menu_btn span:before {
@@ -216,7 +223,7 @@ header {
     padding: 0;
 }
 .menu_body li a:hover {
-    color: #FFD574;
+    color: #F2C762;
 }
 .menu_body p {
     padding-left: 35vw;
@@ -269,7 +276,7 @@ h1 {
     font-weight: 500;
 }
 .top p {
-    color: white;
+    color: #fdf9f2;
     font-size: 30px;
 }
 .top span {
@@ -290,6 +297,9 @@ h1 {
     font-size: 100px;
     margin-right: 10px;
 }
+.first_line {
+    margin-top: -0.7em;
+}
 .first_line, .second_line, .last_line {
     font-size: 50px;
 }
@@ -298,7 +308,7 @@ h1 {
 }
 .about_detail {
     margin: 3em 7em 4em 13.5em;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
 }
   
@@ -309,7 +319,9 @@ h1 {
     scroll-margin-top: 150px;
 }
 .best_items {
-    background-color: #F2F2F2;
+    /* background-color: #faf3e5; */
+    /* background-color: #e7e8e3; */
+    /* background-color: #ecede8; */
     padding: 100px 0;
     display: flex;
 }
@@ -374,7 +386,7 @@ h1 {
  * 4.DESIGNERS, 5.SHOPS
  */
 .designer {
-    margin-bottom: -200px;
+    margin-bottom: -150px;
 }
 .designer, .shops {
     display: flex;
@@ -383,8 +395,8 @@ h1 {
 .designer .container, .shops .container {
     margin-left: 10vw;
 }
-.designer .btn, .shops .btn {
-    margin-left: 0;
+.designer .container, .shops .container {
+    margin-top: -1em;
 }
 
 /**
@@ -394,109 +406,19 @@ h1 {
     scroll-margin-top: 150px;
 }
 .gallery {
-    position: relative;
-    height: 80em;
-    margin-top: 130px;
+    margin: 250px 40px;
 }
-#page, #page2, #page3 {
-    position: absolute;
-    display: flex;
-    transition: opacity 0.3s ease;
-    height: 100%;
+.gallery_bg {
+    position: relative;
+}
+.gallery_bg img {
     width: 100%;
 }
-.gallery img {
-    object-fit: cover;
-    width: 50%;
-}
-.gallery_content {
-    width: 50%;
-}
-#page .gallery_content {
-    background-color: #FFD574;
-}
-#page2 .gallery_content {
-    background-color: #007394;
-}
-#page3 .gallery_content {
-    background-color: #948779;
-}
-.gallery_content p {
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    margin: 2em;
-    text-align: right;
-}
-#page2 .gallery_content P {
-    bottom: 0;
+.gallery_head {
     position: absolute;
-    right: 50%;
-}
-#page3 .gallery_content P {
-    text-align: left;
-}
-.gallery_box {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    top: 50%;
-    right: 55%;
-    font-size: 20px;
-}
-#page2 .gallery_box {
-    top: 15%;
-}
-.gallery_box_inner {
-    background-color: white;
-    height: 7em;
-    width: 13em;
-    padding: 1em;
-    font-size: 1em;
-} 
-.gallery_box span {
-    font-size: 1.5em;
-}
-.detail {
-    font-size: 0.7em;
-    margin-top: 2em;
-}
-.room_btn {
-    color: white;
-    border: 2px solid white;
-    padding: 1em;
-    margin: 0 1em;
-    font-size: 1em;
-    height: 1.5em;
-}
-.room_btn:hover {
-    cursor: pointer;
-    background: white;
-    transition: all 0.2s ease;
-    font-weight: bold;
-}
-#page .room_btn:hover {
-    color: #FFD574;
-}
-#page2 .room_btn:hover {
-    color: #007394;
-}
-#page3 .room_btn:hover {
-    color: #948779;
-}
-#page2 .room_btn {
-    margin: 0 0 auto 1em;
-}
-#toggleButton {
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    z-index: 1;
-    color: white;
-    text-shadow: 1px 1px 2px #515254;
-    z-index: 5;
+    top: 30%;
+    font-size: 150px;
+    color: #fdf9f2;
 }
 
 /**
@@ -537,13 +459,14 @@ h4 {
     font-weight: lighter;
     margin: 0 auto 2em 8em;
     text-align: left;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 h4 i {
     font-size: 14px;
     cursor: pointer;
 }
 .news .btn {
-    margin-left: 22em;
+    margin-left: 23.5em;
     margin-top: 4em;
 }
 
@@ -551,7 +474,9 @@ h4 i {
  * 8.DISCOUNT
  */
 .discount {
-    background-color: #F2F2F2;
+    /* background-color: #faf3e5; */
+    /* background-color: #e7e8e3; */
+    /* background-color: #ecede8; */
     height: 500px;
     text-align: center;
     position: relative;
@@ -630,6 +555,7 @@ h4 i {
 }
 .service_content {
     width: 40vw;
+    margin-top: -1em;
 }
 .service_content:nth-child(2) {
     margin-left: 10vw;
@@ -642,9 +568,6 @@ h4 i {
 .service span {
     font-size: 40px;
 }
-.service .btn {
-    margin-left: 0;
-}
 
 /**
  * 10.ONLINE STORE
@@ -654,11 +577,11 @@ h4 i {
 }
 .store {
     display: flex;
-    background-color: #888884;
+    background-color: #59514c;
 }
 .store .head {
     margin: auto 0 auto 10%;
-    color: white;
+    color: #fdf9f2;
 }
 .store img {
     width: 100%;
@@ -671,14 +594,11 @@ h4 i {
     font-size: 1.5em;
     padding-bottom: 1.7em;
 }
-.store .btn {
-    margin-left: 0;
-}
 .store .arrow {
     right: 50px;
 }
 .store .arrow_inner {
-    background-color: white;
+    background-color: #fdf9f2;
 }
 .store .arrow_bar {
     width: 2rem;
@@ -724,7 +644,7 @@ input::placeholder {
 }
 .news_letter button {
     padding: 0.7em 1.5em;
-    background-color: #FFD574;
+    background-color: #F2C762;
     border: none;
     color: white;
     cursor: pointer;
@@ -741,7 +661,7 @@ footer, .footer_body, .footer_bottom ul {
 footer {
     position: relative;
     color: white;
-    background: #888884;
+    background: #E7C681;
     padding: 7vw 10%;
 }
 footer ul {
@@ -761,7 +681,7 @@ footer ul {
     padding-bottom: 10px;
 }
 .footer_body li a:hover {
-    color: #FFD574;
+    color: #F2C762;
     border-bottom: 1px solid;
 }
 .footer_address {
@@ -777,7 +697,7 @@ address {
 .footer_bottom {
     margin-top: 50px;
     padding-top: 50px;
-    border-top: 1px solid #959793;
+    border-top: 1px solid #fdf9f2;
 }
 .footer_bottom ul {
     font-size: 20px;
