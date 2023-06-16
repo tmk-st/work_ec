@@ -181,8 +181,23 @@
     /**
     * 8.DISCOUNT
     */
+    .discount {
+        text-align: left;
+    }
+    .img_top_sp {
+        display: block;
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .img_right {
         display: none;
+    }
+    .discount_head {
+        top: 10%;
+        left: 0;
+        transform: translateX(0);
     }
     .discount_head h2 {
         font-size: 23px;
@@ -199,10 +214,11 @@
         padding-top: 10px;
     }
     .img_left {
-        width: 80%;
+        width: 75%;
     }
     .countdown {
         font-size: 14px;
+        top: 47%;
     }
     .time {
         padding: 0 1em;
@@ -212,6 +228,7 @@
     }
     .discount_btn {
         bottom: 20%;
+        transform: translateX(0);
     }
 
     /**

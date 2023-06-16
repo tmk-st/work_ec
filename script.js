@@ -34,16 +34,16 @@ countdown();
 setInterval(countdown,1000);
 
 // フッターまでスクロールするとヘッダーの固定を解除する
-var fixedHeader = document.querySelector('header');
-var footer = document.querySelector('.news_letter');
-var unfixedClass = 'unfixed';
+const fixedHeader = document.querySelector('header');
+const footer = document.querySelector('footer');
+const unfixedClass = 'unfixed';
 
-var elementPosition = footer.getBoundingClientRect().top + window.scrollY;
+const elementPosition = footer.getBoundingClientRect().top + window.scrollY;
 
 window.addEventListener('scroll', function() {
-  var scrollPosition = window.scrollY || window.pageYOffset;
+  const scrollPosition = window.scrollY || window.pageYOffset;
 
-  if (scrollPosition >= elementPosition) {
+  if (scrollPosition >= elementPosition + 1000) {
     fixedHeader.classList.add(unfixedClass);
   } else {
     fixedHeader.classList.remove(unfixedClass);
