@@ -2,10 +2,39 @@
 document.addEventListener('click', function(event) {
   if (event.target.matches('a[href^="#"]')) {
     event.preventDefault();
-    var target = document.querySelector(event.target.getAttribute('href'));
+    const target = document.querySelector(event.target.getAttribute('href'));
     target.scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+// スクロールでメイン画像をズームする
+window.addEventListener('scroll', () => {
+  let elem = document.getElementById('top');
+  let scrollY = window.scrollY/10;
+  elem.style.backgroundSize = 100 + scrollY + '%';
+});
+
+// フェードイン
+function applyFadeInEffect(elements) {
+  window.addEventListener('scroll', () => {
+    for (let i = 0; i < elements.length; i++) {
+      const rect = elements[i].getBoundingClientRect().top;
+      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+      const offset = rect + scroll;
+      const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+      if (scroll > offset - windowHeight + 100) {
+        elements[i].classList.add('scroll_in');
+      }
+    }
+  });
+}
+
+let fadeInTargets = document.querySelectorAll('.fade_in_up');
+applyFadeInEffect(fadeInTargets);
+
+let fadeInTargetsLeft = document.querySelectorAll('.fade_in_left');
+applyFadeInEffect(fadeInTargetsLeft);
+
 
 // カウントダウンタイマー
 const day = document.getElementById("day");
@@ -32,6 +61,14 @@ function countdown() {
 }
 countdown();
 setInterval(countdown,1000);
+
+
+// 画像ズーム、スライド
+// const zoomElement = document.getElementById('gallery_bg');
+
+// zoomElement.classList.remove('zoom-out');
+// zoomElement.classList.add('zoom-in');
+
 
 // フッターまでスクロールするとヘッダーの固定を解除する
 const fixedHeader = document.querySelector('header');
