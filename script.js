@@ -63,13 +63,6 @@ countdown();
 setInterval(countdown,1000);
 
 
-// 画像ズーム、スライド
-// const zoomElement = document.getElementById('gallery_bg');
-
-// zoomElement.classList.remove('zoom-out');
-// zoomElement.classList.add('zoom-in');
-
-
 // フッターまでスクロールするとヘッダーの固定を解除する
 const fixedHeader = document.querySelector('header');
 const footer = document.querySelector('footer');

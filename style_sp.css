@@ -151,15 +151,37 @@
     }
 
     /**
-    * 6.GALLERY
+    * 6.PLANNERS
     */
-    .gallery {
+    .planners {
         margin: 90px 0;
     }
-    .gallery_bg img {
-        width: 125%;
-        height: 80vw;
-        object-fit: cover;
+    .planners .head {
+        color: #514537;
+        z-index: 99;
+    }
+    .planners_bg {
+        position: relative;
+    }
+    .planners_bg::after {
+        content: "";
+        width: 85%;
+        height: 85%;
+        background: rgba(255, 255, 255, .4);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .planners_img {
+        height: 400px;
+    }
+    .planners .arrow {
+        right: 50px;
+    }
+    .planners .head {
+        top: 20%;
+        left: 10%;
     }
 
     /**
@@ -202,8 +224,8 @@
         display: none;
     }
     .discount_head {
-        top: 10%;
-        left: 0;
+        top: 13%;
+        left: 5%;
         transform: translateX(0);
     }
     .discount_head h2 {
