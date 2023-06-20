@@ -49,6 +49,34 @@
     .menu_btn {
         top: 0.8em;
     }
+    .menu_content {
+        display: block;
+    }
+    .menu_head {
+        font-size: 23px;
+    }
+    .menu_body {
+        display: block;
+        font-size: 30px;
+    }
+    .menu_body p {
+        padding: 0;
+    }
+    .menu_body ul {
+        margin-top: 50px;
+    }
+    .menu_bottom {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .menu_bottom ul {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu_bottom li {
+        margin-right: 1.5em;
+    }
 
     /**
     * 1.TOP
@@ -146,6 +174,9 @@
     .designer, .shops {
         display: block;
     }
+    .designer .arrow_bar, .shops .arrow_bar {
+        width: 5rem;
+    }
     .shops {
         margin-top: -50px;
     }
@@ -159,6 +190,8 @@
     .planners .head {
         color: #514537;
         z-index: 99;
+        top: 15%;
+        left: 10%;
     }
     .planners_bg {
         position: relative;
@@ -179,9 +212,11 @@
     .planners .arrow {
         right: 50px;
     }
-    .planners .head {
-        top: 20%;
-        left: 10%;
+    .planners .arrow_bar {
+        width: 5rem;
+    }
+    .planners .arrow_inner {
+        background-color: #514537;
     }
 
     /**

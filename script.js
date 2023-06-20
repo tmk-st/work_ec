@@ -1,3 +1,16 @@
+// アクセス時に背景色をスライドアップさせる
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeOverlay = document.createElement('div');
+  fadeOverlay.classList.add('fade-in-overlay');
+  document.body.appendChild(fadeOverlay);
+
+  setTimeout(() => {
+    fadeOverlay.style.display = 'none';
+    document.body.style.overflow = 'visible';
+  }, 2000);
+});
+
+
 // クリック時のスクロールをスムーズにする
 document.addEventListener('click', function(event) {
   if (event.target.matches('a[href^="#"]')) {
@@ -7,6 +20,7 @@ document.addEventListener('click', function(event) {
   }
 });
 
+
 // スクロールでメイン画像をズームする
 window.addEventListener('scroll', () => {
   let elem = document.getElementById('top');
@@ -14,7 +28,24 @@ window.addEventListener('scroll', () => {
   elem.style.backgroundSize = 100 + scrollY + '%';
 });
 
-// フェードイン
+
+// フェードイン（メインタイトル）
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeInTargetsTop = document.querySelectorAll('.fade_in_header');
+  fadeInTargetsTop.forEach(element => {
+    element.classList.add('scroll_in');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeInTargetsTop = document.querySelectorAll('.fade_in_main');
+  fadeInTargetsTop.forEach(element => {
+    element.classList.add('scroll_in');
+  });
+});
+
+
+// フェードイン（共通）
 function applyFadeInEffect(elements) {
   window.addEventListener('scroll', () => {
     for (let i = 0; i < elements.length; i++) {

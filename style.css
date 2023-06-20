@@ -51,6 +51,7 @@ h3 {
     margin-left: 0;
     font-size: 18px;
     position: relative;
+    cursor: pointer;
 }
 .arrow {
     position: absolute;
@@ -59,8 +60,6 @@ h3 {
     height: 20px;
     right: 0;
     top: 0;
-    cursor: pointer;
-    /* flex-direction: column; */
     justify-content: center;
 }
 .arrow_bar {
@@ -69,7 +68,7 @@ h3 {
 }
 .arrow_inner {
     height: 100%;
-    background-color: #484036;
+    background-color: #514537;
 }
 .arrow_head {
     position: absolute;
@@ -97,23 +96,54 @@ ul {
 .jp_font {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
+.br_sp {
+    display: none;
+}
 
 /**
  * FOR JS
  */
-.fade_in_up {
+.fade_in_main, .fade_in_header {
     opacity: 0;
-    transition-duration: .8s;
+    transition-duration: 2s;
+}
+.fade_in_up, .fade_in_left {
+    opacity: 0;
+    transition-duration: 1s;
+}
+.fade_in_main {
+    transform: translate(0, 80px);
+}
+.fade_in_header, .fade_in_up {
     transform: translate(0, 40px);
 }
 .fade_in_left {
-    opacity: 0;
-    transition-duration: .8s;
     transform: translate(-50px, 0);
 }
 .scroll_in {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+.fade-in-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #514537;
+    z-index: 9999;
+    animation: slide-out 2s forwards;
+}  
+@keyframes slide-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
 }
 
 /**
@@ -138,7 +168,7 @@ header {
     position: absolute;
     top: 1.5em;
     font-family: Quicksand;
-    background: #F1D687;
+    background: #E7C681;
     width: 1.5em;
     color: white;
     font-weight: bold;
@@ -158,9 +188,10 @@ header {
 }
 .header_list li a, .menu a {
     padding-bottom: 10px;
+    transition: color 0.3s ease;
 }
 .header_list li a:hover, .menu a:hover {
-    color: #F1D687;
+    color: #E7C681;
     border-bottom: 1px solid;
 }
 .store_btn {
@@ -187,7 +218,7 @@ header {
     content: '';
     height: 2px;
     width: 30px;
-    background-color: #484036;
+    background-color: #514537;
     position: absolute;
 }
 .menu_btn span:before {
@@ -218,7 +249,7 @@ header {
     position: fixed;
     top: 0;
     left: 100%;
-    background-color: #888884;
+    background-color: #514537;
     transition: all 0.5s;
     padding: 7vw 10%;
     color: white;
@@ -244,8 +275,8 @@ header {
     margin-top: -10px;
     padding: 0;
 }
-.menu_body li a:hover {
-    color: #F1D687;
+.menu_body li a:hover, .menu_bottom li:hover {
+    color: #E7C681;
 }
 .menu_body p {
     padding-left: 35vw;
@@ -460,6 +491,11 @@ h1 {
 .news_inner {
     display: flex;
     position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.news_inner:hover {
+    opacity: .6;
 }
 .news_head {
     width: 18vw;
@@ -540,9 +576,6 @@ h4 i {
     margin-bottom: 15px;
     font-weight: lighter;
 }
-.br_sp {
-    display: none;
-}
 .discount_detail {
     font-size: 18px;
 }
@@ -607,7 +640,7 @@ h4 i {
 }
 .store {
     display: flex;
-    background-color: #514537;#
+    background-color: #514537;
 }
 .store .head {
     margin: auto 0 auto 10%;
@@ -696,10 +729,12 @@ footer ul {
 }
 .footer_body li a {
     padding-bottom: 10px;
+    transition: color 0.3s ease;
 }
 .footer_body li a:hover {
-    color: #F1D687;
+    color: #514537;
     border-bottom: 1px solid;
+    transition: border-bottom 0.3s ease;
 }
 .footer_address {
     padding-left: 25vw;
@@ -722,6 +757,10 @@ address {
 .footer_bottom li {
     margin-right: 4em;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+.footer_bottom li:hover {
+    color: #514537;
 }
 .copyright {
     padding-top: 50px;
