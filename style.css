@@ -1,18 +1,11 @@
 @charset "UTF-8";
-.ms_font {
-  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
-}
-
-.jp_font {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-}
-
 /**
  * 共通部分
  */
 html {
   font-size: 62.5%;
   background-color: #fdf9f2;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,6 +26,10 @@ a:hover {
   color: #E7C681;
 }
 
+section {
+  scroll-margin-top: 150px;
+}
+
 .wrapper {
   margin: 250px 100px;
 }
@@ -42,7 +39,7 @@ p {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2.5rem;
   width: 18vw;
   margin: 0;
 }
@@ -50,7 +47,7 @@ h2 {
 h3 {
   font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
   font-weight: 100;
-  font-size: 45px;
+  font-size: 4.5rem;
   margin: 0;
 }
 
@@ -226,8 +223,8 @@ ul {
   position: absolute;
   top: 1.5em;
   right: 2em;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   z-index: 90;
   cursor: pointer;
   padding-top: 20px;
@@ -235,7 +232,7 @@ ul {
 .hamburger_btn span, .hamburger_btn span:before, .hamburger_btn span:after {
   content: "";
   height: 2px;
-  width: 30px;
+  width: 3rem;
   background-color: #514537;
   position: absolute;
 }
@@ -266,12 +263,12 @@ ul {
   width: calc(100% - 18vw);
 }
 .hamburger_content_right_body {
-  font-size: 40px;
+  font-size: 4rem;
   display: flex;
 }
 .hamburger_content_right_body ul {
   line-height: 2;
-  margin-top: -10px;
+  margin-top: -1rem;
   padding: 0;
 }
 .hamburger_content_right_body .button_temp {
@@ -279,8 +276,8 @@ ul {
   line-height: 1.5;
 }
 .hamburger_content_right_bottom {
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 5rem;
+  padding-top: 5rem;
   border-top: 1px solid #959793;
   width: calc(100% - 22vw);
 }
@@ -324,10 +321,6 @@ ul {
 /**
  * 1.TOP
  */
-#top {
-  scroll-margin-top: 150px;
-}
-
 .top {
   position: relative;
   top: 3em;
@@ -366,10 +359,6 @@ ul {
 /**
  * 2.ABOUT US
  */
-#about {
-  scroll-margin-top: 150px;
-}
-
 .about {
   display: flex;
   position: relative;
@@ -379,7 +368,10 @@ ul {
   margin-right: 1rem;
 }
 .about_head {
-  font-size: 50px;
+  font-size: 5rem;
+}
+.about_head span:last-child {
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
 }
 .about_head:first-child {
   margin-top: -0.7em;
@@ -398,10 +390,6 @@ ul {
 /**
  *  3.BEST ITEMS
  */
-#products {
-  scroll-margin-top: 150px;
-}
-
 .best_items {
   padding: 100px 0;
   display: flex;
@@ -478,41 +466,35 @@ ul {
   width: 100%;
   margin: -1em 10vw 0;
 }
+.designer_container_detail, .shops_container_detail {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
 
 /**
  * 6.PLANNERS
  */
-#planners {
-  scroll-margin-top: 150px;
-}
-
 .planners {
   margin: 250px 40px;
   position: relative;
 }
-
-.planners .head {
+.planners_head {
   color: white;
   position: absolute;
   top: 30%;
   left: 18%;
 }
-
 .planners_img {
   width: 100%;
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .planners .arrow {
   right: 50%;
 }
-
 .planners .arrow_bar {
   width: 2rem;
 }
-
 .planners .arrow_inner {
   background-color: white;
 }
@@ -520,35 +502,16 @@ ul {
 /**
  * 7.NEWS
  */
-#news {
-  scroll-margin-top: 150px;
-}
-
 .news_inner {
   display: flex;
   position: relative;
+  padding-top: 6em;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .news_inner:hover {
   opacity: 0.6;
 }
-
-.news_head {
-  width: 18vw;
-  display: flex;
-  font-size: 18px;
-}
-
-.news ul {
-  padding: 0;
-}
-
-.news li {
-  padding-top: 6em;
-}
-
 .news_inner:before {
   content: "";
   position: absolute;
@@ -558,24 +521,25 @@ ul {
   left: 0;
   background-color: #d9d9d9;
 }
-
+.news_head {
+  width: 18vw;
+  display: flex;
+  font-size: 2rem;
+}
 .news_category {
   padding-left: 6em;
 }
-
-h4 {
+.news h4 {
   font-size: 18px;
   font-weight: lighter;
   margin: 0 auto 2em 8em;
   text-align: left;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
-h4 i {
+.news h4 i {
   font-size: 14px;
   cursor: pointer;
 }
-
 .news .btn {
   margin-left: 23.5em;
   margin-top: 4em;
@@ -590,49 +554,43 @@ h4 i {
   text-align: center;
   position: relative;
 }
-
-.img_left {
+.discount_img:first-child {
   position: absolute;
   width: 40%;
   bottom: 0;
   left: 0;
 }
-
-.img_right {
+.discount_img:nth-child(2) {
   position: absolute;
   width: 25%;
   bottom: 0;
   right: 1%;
 }
-
-.img_top_sp {
+.discount_img:last-child {
   display: none;
 }
-
 .discount_head {
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .discount_head span {
-  font-size: 50px;
+  font-size: 5rem;
   color: #CC0000;
 }
-
 .discount_head h2 {
   width: 100vw;
-  font-size: 45px;
-  margin-bottom: 15px;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
   font-weight: lighter;
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
 }
-
-.discount_detail {
+.discount_head_detail {
   font-size: 18px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
-.countdown {
+.discount .countdown {
   display: flex;
   position: absolute;
   top: 50%;
@@ -640,15 +598,12 @@ h4 i {
   transform: translateX(-50%);
   font-size: 16px;
 }
-
-.time {
+.discount .countdown .time {
   padding: 0 2em;
 }
-
-#day, #hour, #min, #sec {
+.discount .countdown .time #day, .discount .countdown .time #hour, .discount .countdown .time #min, .discount .countdown .time #sec {
   font-size: 5rem;
 }
-
 .discount_btn {
   position: absolute;
   margin: 0 auto;
@@ -656,75 +611,60 @@ h4 i {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .discount_btn .arrow {
-  right: -50px;
+  right: -5rem;
 }
-
-.discount_btn .arrow_bar {
+.discount_btn .arrow .arrow_bar {
   width: 1em;
 }
 
 /**
  * 9.OUR SERVICE
  */
-#service {
-  scroll-margin-top: 150px;
-}
-
 .service {
   display: flex;
 }
-
 .service_content {
   width: 40vw;
   margin-top: -1em;
 }
-
 .service_content:nth-child(2) {
   margin-left: 10vw;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
-
 .service_content:last-child {
   margin-left: 20vw;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
-
-.service span {
-  font-size: 40px;
+.service_head {
+  font-size: 4rem;
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
+}
+.service_detail {
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 /**
  * 10.ONLINE STORE
  */
-#store {
-  scroll-margin-top: 150px;
-}
-
 .store {
   display: flex;
   background-color: #514537;
 }
-
-.store .head {
+.store_content {
   margin: auto 0 auto 10%;
   color: #fdf9f2;
 }
-
 .store img {
   width: 100%;
 }
-
 .store .arrow {
-  right: 50px;
+  right: 5rem;
 }
-
-.store .arrow_inner {
+.store .arrow .arrow_inner {
   background-color: #fdf9f2;
 }
-
-.store .arrow_bar {
+.store .arrow .arrow_bar {
   width: 2rem;
 }
 
@@ -733,36 +673,17 @@ h4 i {
  */
 .news_letter {
   display: flex;
-  font-size: 20px;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  font-size: 2rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
-
-.news_letter .container {
+.news_letter_container {
   text-align: end;
-  font-size: 16px;
+  font-size: 1.7rem;
+  margin-right: 10vw;
+  width: 100%;
 }
-
-input::-moz-placeholder {
-  color: #d9d9d9;
-}
-
-input::placeholder {
-  color: #d9d9d9;
-}
-
-.news_letter label {
-  padding-bottom: 1.5em;
-  border-bottom: solid 1px #d9d9d9;
-}
-
-.news_letter p {
-  margin-bottom: 30px;
-  margin-left: 38%;
-  text-align: left;
-}
-
-.news_letter input {
+.news_letter_container input {
   width: 60%;
   text-align: center;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -772,14 +693,28 @@ input::placeholder {
   border-right: none;
   border-left-width: thin;
 }
-
-.news_letter input:focus {
+.news_letter_container input::-moz-placeholder {
+  color: #d9d9d9;
+}
+.news_letter_container input::placeholder {
+  color: #d9d9d9;
+}
+.news_letter_container input:focus {
   outline: none;
 }
-
-.fa-envelope {
+.news_letter_container label {
+  padding-bottom: 1.5em;
+  border-bottom: solid 1px #d9d9d9;
+}
+.news_letter_container label .fa-envelope {
   font-style: normal;
   font-family: Font Awesome\ 5 Free;
+}
+.news_letter_head {
+  margin-bottom: 3rem;
+  margin-left: 38%;
+  text-align: left;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 /**
@@ -789,73 +724,64 @@ footer, .footer_body, .footer_bottom ul {
   display: flex;
 }
 
-footer {
+.footer {
+  display: flex;
   position: relative;
   color: white;
   background: #E7C681;
   padding: 7vw 10%;
 }
-
-footer ul {
-  padding: 0;
-}
-
 .footer_head {
   width: 18vw;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 2;
 }
-
-.footer_body ul {
-  font-size: 30px;
-  line-height: 2.5;
-  margin-top: -10px;
+.footer_body {
+  display: flex;
 }
-
-.footer_body li a {
-  padding-bottom: 10px;
+.footer_body ul {
+  font-size: 3rem;
+  line-height: 2.5;
+  margin-top: -1rem;
+}
+.footer_body ul li a {
+  padding-bottom: 1rem;
   transition: color 0.3s ease;
 }
-
-.footer_body li a:hover {
+.footer_body ul li a:hover {
+  color: #514537;
   border-bottom: 1px solid;
   transition: border-bottom 0.3s ease;
 }
-
-.footer_address {
+.footer_body_address {
   padding-left: 25vw;
   font-size: 16px;
 }
-
-address {
+.footer_body_address address {
   font-style: normal;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
-.footer_address dd {
-  margin: 20px 0 30px;
+.footer_body_address dt {
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
+.footer_body_address dd {
+  margin: 1rem 0 3rem;
+}
 .footer_bottom {
-  margin-top: 50px;
-  padding-top: 50px;
+  font-size: 2rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
   border-top: 1px solid #fdf9f2;
 }
-
-.footer_bottom ul {
-  font-size: 20px;
-}
-
 .footer_bottom li {
   margin-right: 4em;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .footer_bottom li:hover {
   color: #514537;
 }
-
-.copyright {
-  padding-top: 50px;
+.footer_bottom .copyright {
+  padding-top: 5rem;
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
