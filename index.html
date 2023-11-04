@@ -12,52 +12,66 @@
     </head>
     <body>
         <!-- ヘッダー -->
-        <header>
+        <header class="header">
             <div class="logo">H</div>
             <nav>
                 <ul class="header_list fade_in_header">
-                    <li>
+                    <li class="header_item">
                         <a href="#about">about</a>
                     </li>
-                    <li>
+                    <li class="header_item">
                         <a href="#products">products</a>
                     </li>
-                    <li>
+                    <li class="header_item">
                         <a href="#planners">planners</a>
                     </li>
-                    <li>
+                    <li class="header_item">
                         <a href="#news">news</a>
                     </li>
-                    <li>
+                    <li class="header_item">
                         <a href="#service">service</a>
                     </li>
                 </ul>
             </nav>
-            <div class="store_btn fade_in_header">
-                <span><a href="#store">shop</a></span>
+            <div class="header_shop-btn fade_in_header">
+                <span>
+                    <a href="#store">shop</a>
+                </span>
             </div>
             <!-- ハンバーガーメニュー　 -->
             <div class="hamburger">
-                <input type="checkbox" id="menu-btn-check">
-                <label for="menu-btn-check" class="menu_btn fade_in_header"><span></span></label>
-                <div class="menu_content">
-                    <div class="menu_head">
-                        <p><a href="#top">HOMIE</a></p>
+                <input type="checkbox" id="hamburger-btn-check">
+                <label for="hamburger-btn-check" class="hamburger_btn fade_in_header">
+                    <span></span>
+                </label>
+                <div class="hamburger_content">
+                    <div class="hamburger_content_head">
+                        <a href="#top">HOMIE</a>
                     </div>
-                    <div class="menu_right">
-                        <div class="menu_body">
+                    <div class="hamburger_content_right">
+                        <div class="hamburger_content_right_body">
                             <ul>
-                                <li><a href="#about">about</a></li>
-                                <li><a href="#products">products</a></li>
-                                <li><a href="#planners">planners</a></li>
-                                <li><a href="#news">news</a></li>
-                                <li><a href="#service">service</a></li>
+                                <li>
+                                    <a href="#about">about</a>
+                                </li>
+                                <li>
+                                    <a href="#products">products</a>
+                                </li>
+                                <li>
+                                    <a href="#planners">planners</a>
+                                </li>
+                                <li>
+                                    <a href="#news">news</a>
+                                </li>
+                                <li>
+                                    <a href="#service">service</a>
+                                </li>
                             </ul>
-                            <p>
+                            <p class="button_temp">
                                 online store
                             </p>
                         </div>
-                        <div class="menu_bottom">
+                        <div class="hamburger_content_right_bottom">
                             <ul>
                                 <li>catalog</li>
                                 <li>download</li>
@@ -77,9 +91,15 @@
                 <img src="./img/top.jpg" loading="lazy" alt="main_image">
             </div>
             <div class="top_title">
-                <h1 class="fade_in_main">homie
+                <h1 class="fade_in_main">
+                    homie
                 </h1>
-                <p class="fade_in_up">HOMIE <span class="ms_font">creates "new standard"<br>to enrich your everyday life.</span></p>
+                <p class="top_title_text fade_in_up">
+                    HOMIE 
+                    <span>
+                        creates "new standard"<br>to enrich your everyday life.
+                    </span>
+                </p>
             </div>
         </section>
 
@@ -89,22 +109,25 @@
                 <h2>ABOUT US</h2>
             </div>
             <div>
-                <p class="first_line">
-                    <span class="about_title fade_in_up">homie</span><span class="ms_font">creates</span>
+                <p class="about_head">
+                    <span class="about_title fade_in_up">homie</span>
+                    <span class="ms_font">creates</span>
                 </p>
-                <p class="second_line ms_font fade_in_up">
+                <p class="about_head fade_in_up">
                     "ner standard" to
                 </p>
-                <p class="last_line ms_font fade_in_up">
+                <p class="about_head fade_in_up">
                     enrich your everyday life. 
                 </p>
-                <p class="about_detail jp_font">
+                <p class="about_detail">
                     HOMIEのプロダクトに共通するのは、シンプルながらミニマルでモダンなデザイン。<br>
                     こだわりの素材や製造法を用い、時代に沿ったエシカルな考え方でカタチにしています。<br>
                     プロダクトを手にした人の生活を豊かに変える—HOMIEは「新しいスタンダード」を創造するブランドです。
                 </p>
                 <div class="btn">
-                    <p class="fade_in_up">ABOUT US</p>
+                    <p class="fade_in_up">
+                        ABOUT US
+                    </p>
                     <div class="arrow fade_in_left">
                         <div class="arrow_bar">
                             <div class="arrow_inner"></div>
@@ -116,8 +139,8 @@
         </section>
 
         <!-- 3.BEST ITEMS -->
-        <section class="best_items" id="products">
-            <div class="head">
+        <section class="wrapper best_items" id="products">
+            <div class="best_items_head">
                 <h2>BEST ITEMS</h2>
                 <div class="best_items_btn">
                     <p class="fade_in_up">VIEW ALL</p>
@@ -129,40 +152,48 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="best_items_container">
                 <div class="best_items_content">
                     <img src="./img/chair_white.jpg" loading="lazy" alt="product">
-                    <p>chair</p><p>¥5,990</p>
+                    <p>chair</p>
+                    <p>¥5,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/lamp.jpg" loading="lazy" alt="product">
                     <div class="new_item_tag">new</div>
-                    <p>lamp</p><p>¥7,990</p>
+                    <p>lamp</p>
+                    <p>¥7,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/bedside_lamp.jpg" loading="lazy" alt="product">
-                    <p>side-lamp</p><p>¥6,990</p>
+                    <p>side-lamp</p>
+                    <p>¥6,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/couch.jpg" loading="lazy" alt="product">
                     <div class="new_item_tag">new</div>
-                    <p>couch</p><p>¥39,990</p>
+                    <p>couch</p>
+                    <p>¥39,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/plant_product.jpg" loading="lazy" alt="product">
-                    <p>mini plant</p><p>¥2,990</p>
+                    <p>mini plant</p>
+                    <p>¥2,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/clock.jpg" loading="lazy" alt="product">
-                    <p>wall clock</p><p>¥3,990</p>
+                    <p>wall clock</p>
+                    <p>¥3,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/wood_chair.jpg" loading="lazy" alt="product">
-                    <p>wood chair</p><p>¥5,990</p>
+                    <p>wood chair</p>
+                    <p>¥5,990</p>
                 </div>
                 <div class="best_items_content">
                     <img src="./img/lamp_blk.jpg" loading="lazy" alt="product">
-                    <p>lamp</p><p>¥6,990</p>
+                    <p>lamp</p>
+                    <p>¥6,990</p>
                 </div>
             </div>
             <div class="best_items_btn_sp">
@@ -178,13 +209,17 @@
 
         <!-- 4.DESIGNERS -->
         <section class="wrapper designer">
-            <div class="head">
+            <div class="designer_head">
                 <h2>DESIGNERS</h2>
             </div>
-            <div class="container">
-                <h3 class="fade_in_up">About Designers</h3>
+            <div class="designer_container">
+                <h3 class="fade_in_up">
+                    About Designers
+                </h3>
                  <div class="btn">
-                    <p class="jp_font fade_in_up">HOMIEのデザイナーについて</p>
+                    <p class="jp_font fade_in_up">
+                        HOMIEのデザイナーについて
+                    </p>
                     <div class="arrow fade_in_left">
                         <div class="arrow_bar">
                             <div class="arrow_inner"></div>
@@ -197,13 +232,15 @@
 
         <!-- 5.SHOPS -->
         <section class="wrapper shops">
-            <div class="head">
+            <div class="shops_head">
                 <h2>SHOPS</h2>
             </div>
-            <div class="container">
+            <div class="shops_container">
                 <h3 class="fade_in_up">Find Shops</h3>
                     <div class="btn">
-                    <p class="jp_font fade_in_up">HOMIEの取扱店舗について</p>
+                    <p class="jp_font fade_in_up">
+                        HOMIEの取扱店舗について
+                    </p>
                     <div class="arrow fade_in_left">
                         <div class="arrow_bar">
                             <div class="arrow_inner"></div>
@@ -215,11 +252,11 @@
         </section>
 
         <!-- 6.PLANNERS -->
-        <section class="planners" id="planners">
+        <section class="wrapper planners" id="planners">
             <div class="head">
                 <h2>PLANNERS</h2>
-                <div class="sub_title ms_font fade_in_up">Design your Room</div>
-                <div class="sub_title_detail jp_font fade_in_up">
+                <div class="subtitle fade_in_up">Design your Room</div>
+                <div class="subtitle_detail fade_in_up">
                     専任アドバイザーが<br class="br_sp">あなたのお部屋づくりをお手伝いします
                 </div>
                 <div class="btn">
@@ -362,13 +399,13 @@
         </section>
 
         <!-- 10.ONLINE STORE -->
-        <section class="store" id="store">
+        <section class="wrapper store" id="store">
             <div class="head">
                 <h2>ONLINE STORE</h2>
-                <div class="sub_title ms_font fade_in_up">
+                <div class="subtitle fade_in_up">
                     Click here <br class="br_pc fade_in_up">to Buy
                 </div>
-                <div class="sub_title_detail jp_font fade_in_up">製品の購入はこちら</div>
+                <div class="subtitle_detail fade_in_up">製品の購入はこちら</div>
                 <div class="btn">
                     <p>SHOP NOW</p>
                     <div class="arrow fade_in_left">
