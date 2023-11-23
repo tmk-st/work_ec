@@ -379,12 +379,13 @@ ul {
         }
 
         &_text {
+            &_name {
+                font-weight: 500;
+                // font-size: 3rem;
+            }
             color: $main-color-white;
             font-size: 3rem;
-            span {
-                font-size: 0.9em;
-                font-family: $eng-font-normal;
-            }
+            font-family: $eng-font-normal;
         }
     }
 }
@@ -442,6 +443,7 @@ ul {
     }
 
     &_btn {
+        cursor: pointer;
         .arrow {
             right: 4em;
         }

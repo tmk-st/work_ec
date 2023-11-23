@@ -350,10 +350,10 @@ ul {
 .top_title_text {
   color: #fdf9f2;
   font-size: 3rem;
-}
-.top_title_text span {
-  font-size: 0.9em;
   font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
+}
+.top_title_text_name {
+  font-weight: 500;
 }
 
 /**
@@ -402,6 +402,9 @@ ul {
   font-size: 2rem;
   position: relative;
   margin-top: 2em;
+}
+.best_items_btn {
+  cursor: pointer;
 }
 .best_items_btn .arrow {
   right: 4em;
